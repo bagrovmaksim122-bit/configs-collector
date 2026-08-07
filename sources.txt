@@ -1,11 +1,17 @@
 # Где брать конфиги. Этот файл вы правите, когда находите новые источники.
 #
 # Формат строки:
-#   <url>[|WL|BL]
+#   <url>[|WL|BL|WL-ALL]
 #
-# Необязательная метка в конце нужна только для файлов, где смешаны конфиги для
-# белых списков и для обычного интернета: WL оставит только записи с пометкой
-# [*CIDR] или [WL], BL — только с [BL]. Для однородных файлов метка не нужна.
+# Метка в конце нужна для файлов, где конфиги для белых списков смешаны с обычными
+# и различаются пометкой в имени: WL оставит только записи с [*CIDR] или [WL],
+# BL — только с [BL]. Если файл целиком состоит из конфигов для белых списков и
+# пометок в именах нет — ставьте WL-ALL. Для обычных однородных файлов метка не нужна.
+#
+# Что даёт пометка «белые списки»: такие конфиги публикуются отдельным файлом
+# (configs/whitelist.txt) и не отсеиваются по скорости. Они работают там, где не
+# работает ничего — на мобильном интернете с нулевым балансом, — и медленный сервер
+# там лучше, чем никакого.
 #
 # Строки, начинающиеся с #, игнорируются — так можно временно отключить источник,
 # не удаляя его.
@@ -20,5 +26,9 @@ https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/ru/trojan.t
 https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/ru/vless.txt
 https://cdn.jsdelivr.net/gh/igareck/vpn-configs-for-russia@main/BLACK_VLESS_RUS_mobile.txt
 https://cdn.jsdelivr.net/gh/whoahaow/rjsxrd@main/githubmirror/bypass/bypass-all.txt|BL
+
+# --- белые списки: не отсеиваются по скорости, идут в отдельный файл ---
+https://cdn.jsdelivr.net/gh/igareck/vpn-configs-for-russia@main/Vless-Reality-White-Lists-Rus-Mobile.txt|WL-ALL
+https://cdn.jsdelivr.net/gh/whoahaow/rjsxrd@main/githubmirror/bypass/bypass-all.txt|WL
 
 # --- сюда добавляйте найденное ---
