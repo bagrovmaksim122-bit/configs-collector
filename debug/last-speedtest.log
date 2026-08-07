@@ -45,8 +45,8 @@ Flags:
   -v, --verbose                       Verbose
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/08/07 10:54:43 Database migrations applied successfully.
-Total configs: 230
+2026/08/07 10:59:43 Database migrations applied successfully.
+Total configs: 237
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -54,247 +54,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-[36mTesting configs (0 passed)[0m   0% [                                        ] (0/230, 0 it/hr) [0s:0s][0m
-[36mTesting configs (0 passed)[0m   0% [                                        ] (1/230, 25385 it/s) [0s:0s][0m
-[36mTesting configs (0 passed)[0m   0% [                                        ] (1/230, 183 it/s) [0s:1s][0m
-[36mTesting configs (0 passed)[0m   0% [                                        ] (2/230, 362 it/s) [0s:0s][0m
-[36mTesting configs (0 passed)[0m   0% [                                        ] (2/230, 40 it/s) [0s:5s][0m
-[36mTesting configs (0 passed)[0m   1% [                                        ] (3/230, 60 it/s) [0s:3s][0m
-[36mTesting configs (0 passed)[0m   1% [                                        ] (3/230, 40 it/s) [0s:5s][0m
-[36mTesting configs (0 passed)[0m   1% [                                        ] (4/230, 54 it/s) [0s:4s][0m
-[36mTesting configs (0 passed)[0m   1% [                                        ] (4/230, 14 it/s) [0s:15s][0m
-[36mTesting configs (0 passed)[0m   2% [                                        ] (5/230, 18 it/s) [0s:12s][0m
-[36mTesting configs (0 passed)[0m   2% [                                        ] (5/230, 12 it/s) [0s:18s][0m
-[36mTesting configs (0 passed)[0m   2% [[32m>[0m                                       ] (6/230, 14 it/s) [0s:15s][0m
-[36mTesting configs (0 passed)[0m   2% [[32m>[0m                                       ] (6/230, 14 it/s) [0s:15s][0m
-[36mTesting configs (0 passed)[0m   3% [[32m>[0m                                       ] (7/230, 17 it/s) [0s:13s][0m
-[36mTesting configs (0 passed)[0m   3% [[32m>[0m                                       ] (7/230, 16 it/s) [0s:14s][0m
-[36mTesting configs (0 passed)[0m   3% [[32m>[0m                                       ] (8/230, 18 it/s) [0s:12s][0m
-[36mTesting configs (0 passed)[0m   3% [[32m>[0m                                       ] (8/230, 17 it/s) [0s:13s][0m
-[36mTesting configs (0 passed)[0m   3% [[32m>[0m                                       ] (9/230, 19 it/s) [0s:11s][0m
-[36mTesting configs (0 passed)[0m   3% [[32m>[0m                                       ] (9/230, 18 it/s) [0s:12s][0m
-[36mTesting configs (0 passed)[0m   4% [[32m>[0m                                       ] (10/230, 20 it/s) [0s:11s][0m
-[36mTesting configs (1 passed)[0m   4% [[32m>[0m                                       ] (10/230, 20 it/s) [0s:11s][0m
-[36mTesting configs (1 passed)[0m   4% [[32m>[0m                                       ] (11/230, 20 it/s) [0s:11s][0m
-[36mTesting configs (1 passed)[0m   4% [[32m>[0m                                       ] (11/230, 20 it/s) [0s:11s][0m
-[36mTesting configs (1 passed)[0m   5% [[32m=[0m[32m>[0m                                      ] (12/230, 20 it/s) [0s:11s][0m
-[36mTesting configs (1 passed)[0m   5% [[32m=[0m[32m>[0m                                      ] (12/230, 20 it/s) [0s:11s][0m
-[36mTesting configs (1 passed)[0m   5% [[32m=[0m[32m>[0m                                      ] (13/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   5% [[32m=[0m[32m>[0m                                      ] (13/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   6% [[32m=[0m[32m>[0m                                      ] (14/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   6% [[32m=[0m[32m>[0m                                      ] (14/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   6% [[32m=[0m[32m>[0m                                      ] (15/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   6% [[32m=[0m[32m>[0m                                      ] (15/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   6% [[32m=[0m[32m>[0m                                      ] (16/230, 20 it/s) [0s:10s][0m
-[36mTesting configs (1 passed)[0m   6% [[32m=[0m[32m>[0m                                      ] (16/230, 20 it/s) [1s:10s][0m
-[36mTesting configs (1 passed)[0m   7% [[32m=[0m[32m>[0m                                      ] (17/230, 16 it/s) [1s:13s][0m
-[36mTesting configs (1 passed)[0m   7% [[32m=[0m[32m>[0m                                      ] (17/230, 16 it/s) [1s:13s][0m
-[36mTesting configs (1 passed)[0m   7% [[32m=[0m[32m=[0m[32m>[0m                                     ] (18/230, 16 it/s) [1s:13s][0m
-[36mTesting configs (1 passed)[0m   7% [[32m=[0m[32m=[0m[32m>[0m                                     ] (18/230, 16 it/s) [1s:13s][0m
-[36mTesting configs (1 passed)[0m   8% [[32m=[0m[32m=[0m[32m>[0m                                     ] (19/230, 16 it/s) [1s:13s][0m
-[36mTesting configs (1 passed)[0m   8% [[32m=[0m[32m=[0m[32m>[0m                                     ] (19/230, 16 it/s) [1s:13s][0m
-[36mTesting configs (1 passed)[0m   8% [[32m=[0m[32m=[0m[32m>[0m                                     ] (20/230, 12 it/s) [1s:17s][0m
-[36mTesting configs (1 passed)[0m   8% [[32m=[0m[32m=[0m[32m>[0m                                     ] (20/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m   9% [[32m=[0m[32m=[0m[32m>[0m                                     ] (21/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m   9% [[32m=[0m[32m=[0m[32m>[0m                                     ] (21/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m   9% [[32m=[0m[32m=[0m[32m>[0m                                     ] (22/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m   9% [[32m=[0m[32m=[0m[32m>[0m                                     ] (22/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  10% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (23/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  10% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (23/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  10% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (24/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  10% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (24/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  10% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (25/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  10% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (25/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  11% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (26/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  11% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (26/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  11% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (27/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  11% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (27/230, 12 it/s) [2s:17s][0m
-[36mTesting configs (1 passed)[0m  12% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (28/230, 12 it/s) [2s:16s][0m
-[36mTesting configs (1 passed)[0m  12% [[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                    ] (28/230, 12 it/s) [2s:16s][0m
-[36mTesting configs (1 passed)[0m  12% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (29/230, 12 it/s) [2s:16s][0m
-[36mTesting configs (1 passed)[0m  12% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (29/230, 12 it/s) [2s:16s][0m
-[36mTesting configs (1 passed)[0m  13% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (30/230, 12 it/s) [2s:16s][0m
-[36mTesting configs (2 passed)[0m  13% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (30/230, 12 it/s) [3s:16s][0m
-[36mTesting configs (2 passed)[0m  13% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (31/230, 12 it/s) [3s:16s][0m
-[36mTesting configs (2 passed)[0m  13% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (31/230, 12 it/s) [3s:16s][0m
-[36mTesting configs (2 passed)[0m  13% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (32/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (2 passed)[0m  13% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (32/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (2 passed)[0m  14% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (33/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (3 passed)[0m  14% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (33/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (3 passed)[0m  14% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (34/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (4 passed)[0m  14% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                   ] (34/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (4 passed)[0m  15% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (35/230, 10 it/s) [3s:18s][0m
-[36mTesting configs (5 passed)[0m  15% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (35/230, 10 it/s) [3s:18s][0m
-[36mTesting configs (5 passed)[0m  15% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (36/230, 10 it/s) [3s:18s][0m
-[36mTesting configs (6 passed)[0m  15% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (36/230, 10 it/s) [3s:18s][0m
-[36mTesting configs (6 passed)[0m  16% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (37/230, 10 it/s) [3s:19s][0m
-[36mTesting configs (6 passed)[0m  16% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (37/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  16% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (38/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  16% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (38/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  16% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (39/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  16% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (39/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  17% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (40/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  17% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                  ] (40/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  17% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (41/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  17% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (41/230, 10 it/s) [4s:19s][0m
-[36mTesting configs (6 passed)[0m  18% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (42/230, 9 it/s) [4s:20s][0m
-[36mTesting configs (7 passed)[0m  18% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (42/230, 9 it/s) [4s:20s][0m
-[36mTesting configs (7 passed)[0m  18% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (43/230, 9 it/s) [4s:20s][0m
-[36mTesting configs (8 passed)[0m  18% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (43/230, 9 it/s) [4s:20s][0m
-[36mTesting configs (8 passed)[0m  19% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (44/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  19% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (44/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  19% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (45/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  19% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                 ] (45/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  20% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (46/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  20% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (46/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  20% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (47/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  20% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (47/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  20% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (48/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  20% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (48/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  21% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (49/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  21% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (49/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  21% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (50/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  21% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (50/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  22% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (51/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  22% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                                ] (51/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  22% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (52/230, 9 it/s) [4s:19s][0m
-[36mTesting configs (9 passed)[0m  22% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (52/230, 9 it/s) [5s:19s][0m
-[36mTesting configs (9 passed)[0m  23% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (53/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  23% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (53/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  23% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (54/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  23% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (54/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  23% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (55/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  23% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (55/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  24% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (56/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  24% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (56/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  24% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (57/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  24% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                               ] (57/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  25% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (58/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  25% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (58/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  25% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (59/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  25% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (59/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  26% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (60/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  26% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (60/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  26% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (61/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  26% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (61/230, 9 it/s) [5s:18s][0m
-[36mTesting configs (9 passed)[0m  26% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (62/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (9 passed)[0m  26% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (62/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (9 passed)[0m  27% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (63/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (9 passed)[0m  27% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                              ] (63/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (9 passed)[0m  27% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (64/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (9 passed)[0m  27% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (64/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (9 passed)[0m  28% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (65/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (10 passed)[0m  28% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (65/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (10 passed)[0m  28% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (66/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (10 passed)[0m  28% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (66/230, 9 it/s) [5s:17s][0m
-[36mTesting configs (10 passed)[0m  29% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (67/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (10 passed)[0m  29% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (67/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (10 passed)[0m  29% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (68/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (11 passed)[0m  29% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                             ] (68/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (11 passed)[0m  30% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (69/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (11 passed)[0m  30% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (69/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (11 passed)[0m  30% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (70/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (12 passed)[0m  30% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (70/230, 13 it/s) [5s:12s][0m
-[36mTesting configs (12 passed)[0m  30% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (71/230, 12 it/s) [5s:13s][0m
-[36mTesting configs (13 passed)[0m  30% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (71/230, 12 it/s) [6s:13s][0m
-[36mTesting configs (13 passed)[0m  31% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (72/230, 12 it/s) [6s:13s][0m
-[36mTesting configs (13 passed)[0m  31% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (72/230, 12 it/s) [6s:13s][0m
-[36mTesting configs (13 passed)[0m  31% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (73/230, 12 it/s) [6s:13s][0m
-[36mTesting configs (13 passed)[0m  31% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (73/230, 12 it/s) [6s:13s][0m
-[36mTesting configs (13 passed)[0m  32% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (74/230, 11 it/s) [6s:13s][0m
-[36mTesting configs (14 passed)[0m  32% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                            ] (74/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (14 passed)[0m  32% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (75/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (15 passed)[0m  32% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (75/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (15 passed)[0m  33% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (76/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (15 passed)[0m  33% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (76/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (15 passed)[0m  33% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (77/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (15 passed)[0m  33% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (77/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (15 passed)[0m  33% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (78/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (16 passed)[0m  33% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (78/230, 11 it/s) [7s:13s][0m
-[36mTesting configs (16 passed)[0m  34% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (79/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (16 passed)[0m  34% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (79/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (16 passed)[0m  34% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (80/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (16 passed)[0m  34% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                           ] (80/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (16 passed)[0m  35% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (81/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (17 passed)[0m  35% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (81/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (17 passed)[0m  35% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (82/230, 10 it/s) [7s:14s][0m
-[36mTesting configs (18 passed)[0m  35% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (82/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (18 passed)[0m  36% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (83/230, 10 it/s) [8s:15s][0m
-[36mTesting configs (18 passed)[0m  36% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (83/230, 10 it/s) [8s:15s][0m
-[36mTesting configs (18 passed)[0m  36% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (84/230, 10 it/s) [8s:15s][0m
-[36mTesting configs (19 passed)[0m  36% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (84/230, 10 it/s) [8s:15s][0m
-[36mTesting configs (19 passed)[0m  36% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (85/230, 10 it/s) [8s:15s][0m
-[36mTesting configs (19 passed)[0m  36% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (85/230, 10 it/s) [8s:15s][0m
-[36mTesting configs (19 passed)[0m  37% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (86/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  37% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                          ] (86/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  37% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (87/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  37% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (87/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  38% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (88/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  38% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (88/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  38% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (89/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  38% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (89/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (20 passed)[0m  39% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (90/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  39% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (90/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  39% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (91/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  39% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                         ] (91/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  40% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (92/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  40% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (92/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  40% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (93/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  40% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (93/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (21 passed)[0m  40% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (94/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (22 passed)[0m  40% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (94/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (22 passed)[0m  41% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (95/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (22 passed)[0m  41% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (95/230, 10 it/s) [8s:14s][0m
-[36mTesting configs (22 passed)[0m  41% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (96/230, 10 it/s) [8s:13s][0m
-[36mTesting configs (23 passed)[0m  41% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (96/230, 10 it/s) [8s:13s][0m
-[36mTesting configs (23 passed)[0m  42% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (97/230, 10 it/s) [8s:13s][0m
-[36mTesting configs (23 passed)[0m  42% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                        ] (97/230, 10 it/s) [8s:13s][0m
-[36mTesting configs (23 passed)[0m  42% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (98/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (24 passed)[0m  42% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (98/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (24 passed)[0m  43% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (99/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (25 passed)[0m  43% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (99/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (25 passed)[0m  43% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (100/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (26 passed)[0m  43% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (100/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (26 passed)[0m  43% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (101/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  43% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (101/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  44% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (102/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  44% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (102/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  44% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (103/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  44% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                       ] (103/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  45% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (104/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  45% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (104/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (27 passed)[0m  45% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (105/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (28 passed)[0m  45% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (105/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (28 passed)[0m  46% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (106/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (28 passed)[0m  46% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (106/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (28 passed)[0m  46% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (107/230, 12 it/s) [8s:10s][0m
-[36mTesting configs (29 passed)[0m  46% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (107/230, 12 it/s) [9s:10s][0m
-[36mTesting configs (29 passed)[0m  46% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (108/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (30 passed)[0m  46% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (108/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (30 passed)[0m  47% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (109/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (31 passed)[0m  47% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                      ] (109/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (31 passed)[0m  47% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (110/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (32 passed)[0m  47% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (110/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (32 passed)[0m  48% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (111/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (32 passed)[0m  48% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (111/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (32 passed)[0m  48% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (112/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (32 passed)[0m  48% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (112/230, 13 it/s) [9s:9s][0m
-[36mTesting configs (32 passed)[0m  49% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (113/230, 13 it/s) [9s:8s][0m
-[36mTesting configs (32 passed)[0m  49% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (113/230, 13 it/s) [9s:8s][0m
-[36mTesting configs (32 passed)[0m  49% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (114/230, 13 it/s) [9s:8s][0m
-[36mTesting configs (32 passed)[0m  49% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                     ] (114/230, 13 it/s) [9s:8s][0m
-[36mTesting configs (32 passed)[0m  50% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (115/230, 13 it/s) [9s:8s][0m
-[36mTesting configs (32 passed)[0m  50% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (115/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (32 passed)[0m  50% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (116/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (32 passed)[0m  50% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (116/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (32 passed)[0m  50% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (117/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (33 passed)[0m  50% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (117/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (33 passed)[0m  51% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (118/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (34 passed)[0m  51% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (118/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (34 passed)[0m  51% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (119/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (35 passed)[0m  51% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (119/230, 13 it/s) [10s:8s][0m
-[36mTesting configs (35 passed)[0m  52% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (120/230, 14 it/s) [10s:7s][0m
-[36mTesting configs (36 passed)[0m  52% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                    ] (120/230, 14 it/s) [10s:7s][0m
-[36mTesting configs (36 passed)[0m  52% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                   ] (121/230, 14 it/s) [10s:7s][0m
-[36mTesting configs (37 passed)[0m  52% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                   ] (121/230, 14 it/s) [10s:7s][0m
-[36mTesting configs (37 passed)[0m  53% [[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m>[0m                   ] (122/230, 14 it/s) [10s:7s][0m
+🎉 11:00:10 Full test results for 237 configurations have also been saved to work/speed.csv
+🎉 11:00:10 Test run finished. Found 93 working configs (out of 237).
+🎉 11:00:10 Results have been saved to work/speed.csv
+=========== попытка 2: без флагов вывода ===========
+=========== что получилось ===========
+238 work/speed.csv
+--- заголовок и три строки ---
+link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#c103,passed,,,108.181.0.177,37,200,372.09302,289.85507,US,37,8,1,1,cloudflare.com=ok(37ms)
+vless://a21b9103-1693-49c1-8dc9-e8e8098ee969@198.41.223.159:8443?encryption=none&fp=chrome&host=free-7f1.pages.dev&path=%2F&security=tls&sni=free-7f1.pages.dev&type=ws#c56,passed,,tls,146.190.56.83,65,200,0,0,US,64,1,1,1,cloudflare.com=ok(65ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c109,passed,,reality,2604:2dc0:200:26db::,74,200,264.0264,22.824535,US,74,16,1,1,cloudflare.com=ok(74ms)
+total 140
+drwxr-xr-x  2 runner runner  4096 Aug  7 10:59 .
+drwxr-x--- 12 runner runner  4096 Aug  7 10:59 ..
+-rw-r--r--  1 runner runner  4096 Aug  7 10:59 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Aug  7 10:59 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Aug  7 10:59 xray-knife.db-wal
