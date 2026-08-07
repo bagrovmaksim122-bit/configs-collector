@@ -79,6 +79,11 @@ MIN_MBPS = 0.0
 # Раз ничего не выбрасывается, список стал длиннее — потолок на страну поднят, чтобы у
 # балансировщика было из чего выбирать.
 
+# На время тестов: публиковать конфиги с их исходными именами, не переписывая на
+# "<Страна> <номер>". Так по имени видно, откуда запись взялась. Вернуть в False, когда
+# тесты закончатся, — иначе в приложении не соберутся балансировщики по странам.
+KEEP_SOURCE_NAMES = True
+
 
 FETCH_TIMEOUT = 20
 TCP_TIMEOUT = 1.5
@@ -379,7 +384,10 @@ def publish(chosen: list[Config], output_file: str, output_meta: str, label: str
         index = numbering.get(config.country, 0) + 1
         numbering[config.country] = index
         name = f"{config.country} {index}"
-        lines.append(rename(config.raw, name))
+        # На время тестов имя из источника не переписывается: так видно, какая именно запись
+        # из какого списка работает. Побочный эффект — в приложении не собираются
+        # балансировщики по странам, они ищут участников по образцу "<Страна> <номер>".
+        lines.append(config.raw if KEEP_SOURCE_NAMES else rename(config.raw, name))
         meta.append({
             "name": name,
             "host": config.host,
