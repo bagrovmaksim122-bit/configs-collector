@@ -70,9 +70,15 @@ jobs:
             fi
 
             echo "=========== что получилось ==========="
-            head -5 work/speed.csv 2>/dev/null || echo "результата замера нет"
+            wc -l work/speed.csv 2>/dev/null || echo "результата замера нет"
+            echo "--- заголовок и три строки ---"
+            head -4 work/speed.csv 2>/dev/null
             ls -la ~/.xray-knife/ 2>/dev/null || echo "каталога ~/.xray-knife нет"
-          } 2>&1 | tr '\r' '\n' | grep -v '^\s*$' | head -300 | tee work/knife.log
+          } 2>&1 \
+            | tr '\r' '\n' \
+            | grep -v -e '^\s*$' -e 'Testing configs' \
+            | head -200 \
+            | tee work/knife.log
 
       - uses: actions/upload-artifact@v4
         with:
