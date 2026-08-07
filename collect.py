@@ -527,16 +527,21 @@ def parse_speed_results() -> dict[str, tuple[float, str]]:
                 return header
         return None
 
-    label_col = find("remark", "name", "tag", "title")
+    # Метка может лежать как в отдельном столбце с именем, так и внутри самой ссылки после
+    # решётки — второе вероятнее: инструменты обычно пишут в отчёт ссылку целиком.
+    label_col = find("remark", "name", "tag", "title") or find("link", "config", "uri")
     speed_col = find("download", "dlspeed", "speed", "mbps")
     location_col = find("location", "country", "geo")
     if not label_col or not speed_col:
         log(f"Не разобрал столбцы замера ({headers}) — ранжируем по отклику.")
         return {}
+    log(f"Столбцы замера: метка={label_col!r}, скорость={speed_col!r}, страна={location_col!r}")
 
     results: dict[str, tuple[float, str]] = {}
     for row in rows:
         label = (row.get(label_col) or "").strip()
+        if "#" in label:
+            label = urllib.parse.unquote(label.rsplit("#", 1)[1]).strip()
         match = re.search(r"[\d.]+", (row.get(speed_col) or "").replace(",", "."))
         if not label or not match:
             continue
@@ -552,6 +557,67 @@ def parse_speed_results() -> dict[str, tuple[float, str]]:
         results[label] = (mbps, location)
     log(f"Прочитано результатов замера: {len(results)}")
     return results
+
+
+def cmd_dbdump() -> None:
+    """
+    Достаёт результаты замера из базы xray-knife и складывает их в тот же CSV.
+
+    Нужно потому, что в свежих версиях инструмента результаты уходят в собственную базу
+    SQLite, а флаги вывода в файл могли поменяться. Структуру базы не предполагаем, а
+    выясняем: ищем таблицу, где есть столбец с именем конфига и столбец со скоростью.
+    """
+    import sqlite3
+
+    if os.path.exists(SPEED_CSV):
+        log("CSV уже есть, база не нужна.")
+        return
+
+    path = os.path.expanduser("~/.xray-knife/xray-knife.db")
+    if not os.path.exists(path):
+        log(f"Базы {path} нет — замер, похоже, вообще не запускался.")
+        return
+
+    connection = sqlite3.connect(path)
+    connection.row_factory = sqlite3.Row
+    tables = [r[0] for r in connection.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'")]
+    log(f"Таблицы в базе: {tables}")
+
+    for table in tables:
+        columns = [r[1] for r in connection.execute(f"PRAGMA table_info({table})")]
+        label_col = next((c for c in columns
+                          if any(n in c.lower() for n in ("remark", "name", "tag"))), None) \
+            or next((c for c in columns
+                     if any(n in c.lower() for n in ("link", "config", "uri"))), None)
+        speed_col = next((c for c in columns
+                          if any(n in c.lower() for n in ("download", "speed", "mbps"))), None)
+        if not label_col or not speed_col:
+            continue
+
+        location_col = next((c for c in columns
+                             if any(n in c.lower() for n in ("location", "country", "geo"))), None)
+        selected = [label_col, speed_col] + ([location_col] if location_col else [])
+        rows = list(connection.execute(
+            f"SELECT {', '.join(selected)} FROM {table}"))
+        if not rows:
+            continue
+
+        log(f"Беру результаты из таблицы {table}: столбцы {selected}, строк {len(rows)}")
+        os.makedirs("work", exist_ok=True)
+        import csv
+        with open(SPEED_CSV, "w", encoding="utf-8", newline="") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(["remark", "download", "location"])
+            for row in rows:
+                writer.writerow([
+                    row[label_col],
+                    row[speed_col],
+                    row[location_col] if location_col else "",
+                ])
+        return
+
+    log("В базе не нашлось таблицы с именем и скоростью — публикуем по отклику.")
 
 
 def cmd_rank() -> None:
@@ -610,6 +676,8 @@ if __name__ == "__main__":
     command = sys.argv[1] if len(sys.argv) > 1 else "all"
     if command == "collect":
         cmd_collect()
+    elif command == "dbdump":
+        cmd_dbdump()
     elif command == "rank":
         cmd_rank()
     else:
