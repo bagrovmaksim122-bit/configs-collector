@@ -1,0 +1,24 @@
+# Где брать конфиги. Этот файл вы правите, когда находите новые источники.
+#
+# Формат строки:
+#   <url>[|WL|BL]
+#
+# Необязательная метка в конце нужна только для файлов, где смешаны конфиги для
+# белых списков и для обычного интернета: WL оставит только записи с пометкой
+# [*CIDR] или [WL], BL — только с [BL]. Для однородных файлов метка не нужна.
+#
+# Строки, начинающиеся с #, игнорируются — так можно временно отключить источник,
+# не удаляя его.
+#
+# Формат самого файла-источника значения не имеет: обычный текст, base64, JSON —
+# ссылки вытаскиваются из чего угодно.
+
+# --- проверенные вручную, прямые подключения ---
+https://cdn.jsdelivr.net/gh/tiagorrg/vless-checker@main/docs/keys.json
+https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/ru/shadowsocks.txt
+https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/ru/trojan.txt
+https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/ru/vless.txt
+https://cdn.jsdelivr.net/gh/igareck/vpn-configs-for-russia@main/BLACK_VLESS_RUS_mobile.txt
+https://cdn.jsdelivr.net/gh/whoahaow/rjsxrd@main/githubmirror/bypass/bypass-all.txt|BL
+
+# --- сюда добавляйте найденное ---
