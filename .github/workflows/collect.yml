@@ -106,7 +106,12 @@ jobs:
           path: work/
 
       - name: Отранжировать и записать
-        run: python collect.py rank
+        run: |
+          mkdir -p debug
+          # Заголовок замера и вывод ранжирования тоже кладём в репозиторий: без них
+          # непонятно, почему список отсортирован так, а не иначе.
+          head -1 work/speed.csv > debug/speed-header.txt 2>/dev/null || true
+          python collect.py rank 2>&1 | tee debug/last-rank.log
 
       - name: Опубликовать результат
         run: |
