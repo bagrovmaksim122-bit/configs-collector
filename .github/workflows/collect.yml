@@ -50,11 +50,29 @@ jobs:
         # публикуем то, что есть, с сортировкой по отклику: хуже, чем хотелось, но лучше,
         # чем пустой список у пользователей. Флаги видны в логе ниже.
         continue-on-error: true
+        # Вывод пишется и в лог Actions, и в файл. Файл потом попадает в репозиторий: искать
+        # причину в веб-интерфейсе Actions неудобно, а лежащий в репозитории файл можно просто
+        # открыть. Прогресс-бары из вывода вырезаны, иначе файл распухнет до мегабайтов.
         run: |
-          "$KNIFE" http --help || true
-          "$KNIFE" http -f work/candidates.txt --speedtest --type csv -o work/speed.csv || true
-          echo "--- первые строки результата ---"
-          head -5 work/speed.csv || echo "результата нет"
+          {
+            echo "=========== какие флаги умеет эта версия ==========="
+            "$KNIFE" http --help || true
+
+            echo "=========== попытка 1: вывод в CSV ==========="
+            "$KNIFE" http -f work/candidates.txt --speedtest --type csv -o work/speed.csv || true
+
+            echo "=========== попытка 2: без флагов вывода ==========="
+            # В свежих версиях результаты уходят в собственную базу SQLite, а флагов вывода
+            # в файл может не быть вовсе. Тогда читаем базу напрямую.
+            if [ ! -s work/speed.csv ]; then
+              "$KNIFE" http -f work/candidates.txt --speedtest || true
+              python collect.py dbdump || true
+            fi
+
+            echo "=========== что получилось ==========="
+            head -5 work/speed.csv 2>/dev/null || echo "результата замера нет"
+            ls -la ~/.xray-knife/ 2>/dev/null || echo "каталога ~/.xray-knife нет"
+          } 2>&1 | tr '\r' '\n' | grep -v '^\s*$' | head -300 | tee work/knife.log
 
       - uses: actions/upload-artifact@v4
         with:
@@ -88,7 +106,11 @@ jobs:
         run: |
           git config user.name "collector"
           git config user.email "collector@users.noreply.github.com"
-          git add configs
+          # Лог замера кладём рядом с результатом: пока конвейер не отлажен, его нужно уметь
+          # прочитать, не заходя в интерфейс Actions.
+          mkdir -p debug
+          cp work/knife.log debug/last-speedtest.log 2>/dev/null || true
+          git add configs debug
           # Без изменений выходим спокойно: пустой коммит уронил бы job, а это не ошибка.
           git diff --cached --quiet && echo "изменений нет" && exit 0
           git commit -m "configs: $(date -u '+%Y-%m-%d %H:%M UTC')"
