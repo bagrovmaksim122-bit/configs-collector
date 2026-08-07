@@ -8,10 +8,6 @@ on:
     - cron: "17 * * * *"
   workflow_dispatch:
 
-# Нужно, чтобы job мог коммитить результат обратно в репозиторий.
-permissions:
-  contents: write
-
 # Если предыдущий прогон ещё идёт, новый ждёт: два одновременных коммита в один файл
 # гарантированно конфликтуют.
 concurrency:
@@ -19,9 +15,59 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  collect:
+  # Сбор и замер вынесены в job без права записи в репозиторий. Здесь запускается сторонний
+  # бинарник (xray-knife), и если бы рядом лежал токен, чужой код мог бы им воспользоваться и
+  # подменить список серверов сразу всем пользователям. Права на запись есть только у второго
+  # job, который ничего чужого не запускает.
+  test:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 50
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Собрать кандидатов
+        run: python collect.py collect
+
+      - name: Поставить xray-knife
+        run: |
+          curl -sSL -o knife.zip \
+            https://github.com/lilendian0x00/xray-knife/releases/latest/download/Xray-knife-linux-64.zip
+          unzip -o -q knife.zip -d knife
+          chmod +x "$(find knife -name xray-knife -type f | head -1)"
+          echo "KNIFE=$(find knife -name xray-knife -type f | head -1)" >> "$GITHUB_ENV"
+
+      - name: Замерить скорость
+        # Замер — не повод ронять прогон. Если инструмент не отработал или сменил флаги,
+        # публикуем то, что есть, с сортировкой по отклику: хуже, чем хотелось, но лучше,
+        # чем пустой список у пользователей. Флаги видны в логе ниже.
+        continue-on-error: true
+        run: |
+          "$KNIFE" http --help || true
+          "$KNIFE" http -f work/candidates.txt --speedtest --type csv -o work/speed.csv || true
+          echo "--- первые строки результата ---"
+          head -5 work/speed.csv || echo "результата нет"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: work
+          path: work/
+          retention-days: 1
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
@@ -30,8 +76,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Собрать и проверить
-        run: python collect.py
+      - uses: actions/download-artifact@v4
+        with:
+          name: work
+          path: work/
+
+      - name: Отранжировать и записать
+        run: python collect.py rank
 
       - name: Опубликовать результат
         run: |
