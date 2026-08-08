@@ -45,8 +45,8 @@ Flags:
   -v, --verbose                       Verbose
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/08/08 07:57:39 Database migrations applied successfully.
-Total configs: 294
+2026/08/08 10:03:55 Database migrations applied successfully.
+Total configs: 284
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -54,20 +54,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 07:58:13 Full test results for 294 configurations have also been saved to work/speed.csv
-🎉 07:58:13 Test run finished. Found 161 working configs (out of 294).
-🎉 07:58:13 Results have been saved to work/speed.csv
+🎉 10:04:27 Full test results for 284 configurations have also been saved to work/speed.csv
+🎉 10:04:27 Test run finished. Found 100 working configs (out of 284).
+🎉 10:04:27 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-295 work/speed.csv
+285 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-vless://a21b9103-1693-49c1-8dc9-e8e8098ee969@188.164.248.69:443?encryption=none&fp=chrome&host=free-7f1.pages.dev&path=%2F&security=tls&sni=free-7f1.pages.dev&type=ws#c55,passed,,tls,193.122.154.82,102,200,0,0,US,102,5,1,1,cloudflare.com=ok(102ms)
-vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@104.129.166.8:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=gj2rf.mlrb.tyr.hh.vavava.kdns.fr&path=/&security=tls&sni=gj2rf.mlrb.tyr.hh.vavava.kdns.fr&type=ws#c103,passed,,tls,193.122.154.82,112,200,123.839,145.45454,US,112,5,1,1,cloudflare.com=ok(112ms)
-vless://47fcef29-ab4e-4aa6-932b-d95a18f28a4e@166.62.106.8:443?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=gj2rf.mlrb.tyr.hh.vavava.kdns.fr&path=/&security=tls&sni=gj2rf.mlrb.tyr.hh.vavava.kdns.fr&type=ws#c123,passed,,tls,156.154.213.195,112,200,70.92198,350.8772,US,111,6,1,1,cloudflare.com=ok(112ms)
+vless://a21b9103-1693-49c1-8dc9-e8e8098ee969@188.164.248.220:2083?security=tls&sni=free-7f1.pages.dev&type=ws&headerType=none&host=free-7f1.pages.dev&path=%2F&fp=safari#c20,passed,,tls,193.122.154.82,96,200,0,0,US,95,2,1,1,cloudflare.com=ok(96ms)
+vless://a21b9103-1693-49c1-8dc9-e8e8098ee969@188.164.248.69:443?encryption=none&fp=chrome&host=free-7f1.pages.dev&path=%2F&security=tls&sni=free-7f1.pages.dev&type=ws#c121,passed,,tls,174.136.205.75,338,200,0,0,US,338,1,1,1,cloudflare.com=ok(338ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@51.158.206.12:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c130,passed,,reality,51.158.206.12,347,200,51.5132,66.88963,NL,347,82,1,1,cloudflare.com=ok(347ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Aug  8 07:57 .
-drwxr-x--- 12 runner runner  4096 Aug  8 07:57 ..
--rw-r--r--  1 runner runner  4096 Aug  8 07:57 xray-knife.db
--rw-r--r--  1 runner runner 32768 Aug  8 07:57 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Aug  8 07:57 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Aug  8 10:03 .
+drwxr-x--- 12 runner runner  4096 Aug  8 10:03 ..
+-rw-r--r--  1 runner runner  4096 Aug  8 10:03 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Aug  8 10:03 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Aug  8 10:03 xray-knife.db-wal
