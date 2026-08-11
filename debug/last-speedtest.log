@@ -45,8 +45,8 @@ Flags:
   -v, --verbose                       Verbose
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/08/11 04:06:37 Database migrations applied successfully.
-Total configs: 240
+2026/08/11 08:14:19 Database migrations applied successfully.
+Total configs: 353
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -54,20 +54,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 04:07:04 Full test results for 240 configurations have also been saved to work/speed.csv
-🎉 04:07:04 Test run finished. Found 133 working configs (out of 240).
-🎉 04:07:04 Results have been saved to work/speed.csv
+🎉 08:14:58 Full test results for 353 configurations have also been saved to work/speed.csv
+🎉 08:14:58 Test run finished. Found 194 working configs (out of 353).
+🎉 08:14:58 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-241 work/speed.csv
+354 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-vless://5d8eb33a-2166-4daf-88fe-4be5799c493b@141.101.120.73:443?encryption=none&fp=chrome&host=noisy-term-e657.airdrop2014aa5168.workers.dev&path=%2F&security=tls&sni=noisy-term-e657.airdrop2014aa5168.workers.dev&type=ws#c53,passed,,tls,8.221.126.227,98,200,0,0,US,98,2,1,1,cloudflare.com=ok(98ms)
-vless://56e4896e-90a9-4fe0-8480-90d3d68b9928@8.35.211.43:2053?encryption=none&fp=chrome&host=go.iranfree.de5.net&path=%2F&security=tls&sni=go.iranfree.de5.net&type=ws#c54,passed,,tls,192.3.1.218,176,200,0,0,US,176,2,1,1,cloudflare.com=ok(176ms)
-vless://fc8a0708-951a-4027-860f-2a154ebc4dd7@172.67.68.157:2083?path=%2F&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&encryption=none&insecure=0&host=crimson-king-301d.nexoxnet.workers.dev&fp=ios&type=ws&allowInsecure=0&sni=crimson-king-301d.nexoxnet.workers.dev#c25,passed,,tls,20.106.211.232,193,200,0,0,US,193,5,1,1,cloudflare.com=ok(193ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqaVVUemZkUG83Zlc=@70.39.178.204:42747#c78,passed,,,70.39.178.204,44,200,7.7650776,0,US,44,10,1,1,cloudflare.com=ok(44ms)
+vless://1d39f715-2740-4d99-bc3b-197cc48dcee7@107.173.237.146:8443?encryption=none&fp=&pbk=D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc&security=reality&sid=df8611c07d&sni=updates.cdn-apple.com&type=tcp#c74,passed,,reality,107.173.237.146,59,200,287.7698,247.678,US,59,11,1,1,cloudflare.com=ok(59ms)
+vless://f618d6e9-c6af-40b8-bc7a-bbf450586784@216.36.124.176:29513?flow=xtls-rprx-vision&security=reality&sni=addons.mozilla.org&fp=chrome&pbk=rSI9mgtOco9D39xdbX64nv2J2BRBGQpgCOi4opw8mCo&sid=6ba85179e30d4fc2&type=tcp&path=/#c102,passed,,reality,216.36.124.176,65,200,32.626427,42.35045,US,65,8,1,1,cloudflare.com=ok(65ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Aug 11 04:06 .
-drwxr-x--- 12 runner runner  4096 Aug 11 04:06 ..
--rw-r--r--  1 runner runner  4096 Aug 11 04:06 xray-knife.db
--rw-r--r--  1 runner runner 32768 Aug 11 04:06 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Aug 11 04:06 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Aug 11 08:14 .
+drwxr-x--- 12 runner runner  4096 Aug 11 08:14 ..
+-rw-r--r--  1 runner runner  4096 Aug 11 08:14 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Aug 11 08:14 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Aug 11 08:14 xray-knife.db-wal
