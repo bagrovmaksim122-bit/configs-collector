@@ -45,8 +45,8 @@ Flags:
   -v, --verbose                       Verbose
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/08/15 15:53:09 Database migrations applied successfully.
-Total configs: 371
+2026/08/15 16:59:19 Database migrations applied successfully.
+Total configs: 342
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -54,20 +54,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 15:53:46 Full test results for 371 configurations have also been saved to work/speed.csv
-🎉 15:53:46 Test run finished. Found 172 working configs (out of 371).
-🎉 15:53:46 Results have been saved to work/speed.csv
+🎉 16:59:55 Full test results for 342 configurations have also been saved to work/speed.csv
+🎉 16:59:55 Test run finished. Found 167 working configs (out of 342).
+🎉 16:59:55 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-372 work/speed.csv
+343 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo=@23.150.248.20:8388#c100,passed,,,23.150.248.20,95,200,241.69183,61.16208,US,95,15,1,1,cloudflare.com=ok(95ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#c105,passed,,,37.19.198.243,98,200,31.496063,187.35364,US,98,31,1,1,cloudflare.com=ok(98ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#c106,passed,,,37.19.198.244,102,200,38.35091,132.66998,US,101,30,1,1,cloudflare.com=ok(102ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c89,passed,,reality,2604:2dc0:200:26d8::,68,200,202.0202,79.52286,US,68,15,1,1,cloudflare.com=ok(68ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c92,passed,,reality,2604:2dc0:200:26db::,69,200,264.0264,57.306587,US,69,15,1,1,cloudflare.com=ok(69ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.198:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c87,passed,,reality,2604:2dc0:200:26c6::,69,200,204.60358,0,US,69,15,1,1,cloudflare.com=ok(69ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Aug 15 15:53 .
-drwxr-x--- 12 runner runner  4096 Aug 15 15:53 ..
--rw-r--r--  1 runner runner  4096 Aug 15 15:53 xray-knife.db
--rw-r--r--  1 runner runner 32768 Aug 15 15:53 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Aug 15 15:53 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Aug 15 16:59 .
+drwxr-x--- 12 runner runner  4096 Aug 15 16:59 ..
+-rw-r--r--  1 runner runner  4096 Aug 15 16:59 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Aug 15 16:59 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Aug 15 16:59 xray-knife.db-wal
