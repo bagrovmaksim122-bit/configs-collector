@@ -45,8 +45,8 @@ Flags:
   -v, --verbose                       Verbose
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/08/20 05:06:07 Database migrations applied successfully.
-Total configs: 327
+2026/08/20 07:29:06 Database migrations applied successfully.
+Total configs: 315
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -54,20 +54,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 05:06:43 Full test results for 327 configurations have also been saved to work/speed.csv
-🎉 05:06:43 Test run finished. Found 186 working configs (out of 327).
-🎉 05:06:43 Results have been saved to work/speed.csv
+🎉 07:29:37 Full test results for 315 configurations have also been saved to work/speed.csv
+🎉 07:29:37 Test run finished. Found 155 working configs (out of 315).
+🎉 07:29:37 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-328 work/speed.csv
+316 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#c93,passed,,,37.19.198.243,34,200,0.00021621621,522.87585,US,34,7,1,1,cloudflare.com=ok(34ms)
-vless://7b188eea-b08f-42c2-bac7-d3b0e74218b8@147.182.212.232:56565?security=reality&type=tcp&sni=www.paypal.com&fp=chrome&flow=xtls-rprx-vision&pbk=Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY&encryption=none#c95,passed,,reality,147.182.212.232,47,200,434.7826,408.16327,US,47,7,1,1,cloudflare.com=ok(47ms)
-vless://b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb@89.116.243.205:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=zDeF_twyyT7a7zKiURF-Q8f6kkj95rx7zQ_jar09Hi4&security=reality&sid=e4f6a3446ac34a23&sni=us.savesafe.cc&type=tcp#c94,passed,,reality,89.116.243.205,74,200,386.47345,360.36035,US,74,10,1,1,cloudflare.com=ok(74ms)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#c101,passed,,,37.19.198.243,42,200,280.70175,349.34497,US,42,11,1,1,cloudflare.com=ok(42ms)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#c100,passed,,,37.19.198.244,45,200,325.20325,384.6154,US,45,11,1,1,cloudflare.com=ok(45ms)
+vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?security=reality&encryption=none&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#c96,passed,,reality,47.253.226.114,46,200,4.9651,0,US,46,6,1,1,cloudflare.com=ok(46ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Aug 20 05:06 .
-drwxr-x--- 12 runner runner  4096 Aug 20 05:06 ..
--rw-r--r--  1 runner runner  4096 Aug 20 05:06 xray-knife.db
--rw-r--r--  1 runner runner 32768 Aug 20 05:06 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Aug 20 05:06 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Aug 20 07:29 .
+drwxr-x--- 12 runner runner  4096 Aug 20 07:29 ..
+-rw-r--r--  1 runner runner  4096 Aug 20 07:29 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Aug 20 07:29 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Aug 20 07:29 xray-knife.db-wal
