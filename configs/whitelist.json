@@ -1,100 +1,28 @@
 {
- "count": 12,
+ "count": 3,
  "servers": [
   {
-   "name": "Германия 1",
-   "host": "185.178.208.176",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 88,
-   "mbps": 40.7
-  },
-  {
-   "name": "Россия 1",
-   "host": "195.133.23.200",
-   "port": 10666,
-   "protocol": "ss",
-   "latency_ms": 117,
-   "mbps": 1.0
-  },
-  {
-   "name": "Россия 2",
-   "host": "62.233.43.35",
-   "port": 5443,
-   "protocol": "vless",
-   "latency_ms": 120,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 3",
-   "host": "138.124.255.236",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 121,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 4",
-   "host": "138.124.255.221",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 121,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 5",
-   "host": "178.176.128.128",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 122,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 6",
-   "host": "176.109.108.196",
-   "port": 9892,
-   "protocol": "vless",
-   "latency_ms": 122,
-   "mbps": 0.0
-  },
-  {
-   "name": "Великобритания 1",
-   "host": "146.185.211.2",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 126,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 7",
-   "host": "213.171.24.132",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 129,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 8",
-   "host": "109.196.99.30",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 137,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 9",
-   "host": "138.124.254.68",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 169,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 10",
+   "name": "Польша 1",
    "host": "217.150.197.54",
    "port": 8443,
    "protocol": "hysteria2",
    "latency_ms": 9999,
+   "mbps": 1.9
+  },
+  {
+   "name": "Россия 1",
+   "host": "138.124.255.236",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 141,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 2",
+   "host": "178.176.128.128",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 144,
    "mbps": 0.0
   }
  ]
