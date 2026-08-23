@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/08/23 05:49:28 Database migrations applied successfully.
-Total configs: 217
+2026/08/23 07:51:48 Database migrations applied successfully.
+Total configs: 219
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 05:50:46 Full test results for 217 configurations have also been saved to work/speed.csv
-🎉 05:50:46 Test run finished. Found 134 working configs (out of 217).
-🎉 05:50:46 Results have been saved to work/speed.csv
+🎉 07:53:10 Full test results for 219 configurations have also been saved to work/speed.csv
+🎉 07:53:10 Test run finished. Found 136 working configs (out of 219).
+🎉 07:53:10 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-218 work/speed.csv
+220 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?encryption=none&flow=xtls-rprx-vision&fp=&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&security=reality&sni=www.cloudflare.com&type=tcp#c73,passed,,reality,137.184.218.169,62,200,497.26132,531.3599,US,62,11,1,1,cloudflare.com=ok(62ms)
-vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.184:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#c72,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,185.195.57.175,85,200,0,117.03558,US,85,12,1,1,cloudflare.com=ok(85ms)
-vless://8525fe74-67e6-4a55-8a26-95f227bd1384@8.39.125.152:8443?encryption=none&fp=chrome&host=bitter-shadow-4fc5.alvlirm852.workers.dev&path=%2F&security=tls&sni=bitter-shadow-4fc5.alvlirm852.workers.dev&type=ws#c56,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": io: read/write on closed pipe; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": io: read/write on closed pipe",tls,104.28.167.44,112,200,0,0,US,111,8,1,1,cloudflare.com=ok(112ms)
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?encryption=none&flow=xtls-rprx-vision&fp=&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&security=reality&sni=www.cloudflare.com&type=tcp#c76,passed,,reality,137.184.218.169,113,200,262.7433,256.62543,US,112,26,1,1,cloudflare.com=ok(113ms)
+vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.184:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#c73,passed,,reality,185.195.57.175,114,200,50.753727,367.44467,US,114,18,1,1,cloudflare.com=ok(114ms)
+vless://1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba@84.75.220.220:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY&security=reality&sid=58fbcddfaae3ade9&sni=us.srv.anti-zapret.com&type=tcp#c77,passed,,reality,84.75.220.220,163,200,141.13377,127.264694,US,163,38,1,1,cloudflare.com=ok(163ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Aug 23 05:49 .
-drwxr-x--- 12 runner runner  4096 Aug 23 05:49 ..
--rw-r--r--  1 runner runner  4096 Aug 23 05:49 xray-knife.db
--rw-r--r--  1 runner runner 32768 Aug 23 05:49 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Aug 23 05:49 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Aug 23 07:51 .
+drwxr-x--- 12 runner runner  4096 Aug 23 07:51 ..
+-rw-r--r--  1 runner runner  4096 Aug 23 07:51 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Aug 23 07:51 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Aug 23 07:51 xray-knife.db-wal
