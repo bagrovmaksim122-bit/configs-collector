@@ -1,44 +1,36 @@
 {
- "count": 15,
+ "count": 13,
  "servers": [
   {
-   "name": "Германия 1",
-   "host": "212.41.9.137",
-   "port": 9881,
-   "protocol": "vless",
-   "latency_ms": 182,
-   "mbps": 0.0
-  },
-  {
    "name": "Россия 1",
-   "host": "212.41.9.137",
-   "port": 9889,
+   "host": "66.90.90.164",
+   "port": 8443,
    "protocol": "vless",
-   "latency_ms": 182,
+   "latency_ms": 177,
    "mbps": 0.0
   },
   {
    "name": "Россия 2",
-   "host": "194.38.11.86",
-   "port": 65443,
-   "protocol": "ss",
-   "latency_ms": 185,
+   "host": "66.90.90.20",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 179,
    "mbps": 0.0
   },
   {
    "name": "Россия 3",
-   "host": "194.58.95.183",
-   "port": 9871,
+   "host": "185.22.153.130",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 187,
+   "latency_ms": 186,
    "mbps": 0.0
   },
   {
    "name": "Россия 4",
-   "host": "185.22.153.130",
+   "host": "84.23.54.213",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 193,
+   "latency_ms": 187,
    "mbps": 0.0
   },
   {
@@ -46,59 +38,43 @@
    "host": "109.120.191.142",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 196,
+   "latency_ms": 190,
+   "mbps": 0.0
+  },
+  {
+   "name": "Швеция 1",
+   "host": "194.58.95.183",
+   "port": 9871,
+   "protocol": "vless",
+   "latency_ms": 191,
    "mbps": 0.0
   },
   {
    "name": "Россия 6",
-   "host": "84.23.54.213",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 201,
+   "host": "194.38.11.86",
+   "port": 65443,
+   "protocol": "ss",
+   "latency_ms": 193,
    "mbps": 0.0
   },
   {
    "name": "Россия 7",
-   "host": "176.109.85.71",
-   "port": 14443,
+   "host": "45.11.27.52",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 239,
+   "latency_ms": 205,
    "mbps": 0.0
   },
   {
    "name": "Россия 8",
-   "host": "66.90.90.164",
-   "port": 8443,
+   "host": "176.109.85.71",
+   "port": 14443,
    "protocol": "vless",
-   "latency_ms": 247,
+   "latency_ms": 242,
    "mbps": 0.0
   },
   {
    "name": "Россия 9",
-   "host": "66.90.90.20",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 250,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 10",
-   "host": "45.11.27.52",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 1253,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 11",
-   "host": "66.90.90.13",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 1281,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 12",
    "host": "91.240.86.70",
    "port": 27443,
    "protocol": "hysteria2",
@@ -106,7 +82,7 @@
    "mbps": 0.0
   },
   {
-   "name": "Россия 13",
+   "name": "Россия 10",
    "host": "185.247.185.238",
    "port": 25443,
    "protocol": "hysteria2",
@@ -114,8 +90,16 @@
    "mbps": 0.0
   },
   {
-   "name": "Россия 14",
+   "name": "Россия 11",
    "host": "194.87.56.99",
+   "port": 25443,
+   "protocol": "hysteria2",
+   "latency_ms": 9999,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 12",
+   "host": "62.76.233.254",
    "port": 25443,
    "protocol": "hysteria2",
    "latency_ms": 9999,
