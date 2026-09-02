@@ -1,28 +1,84 @@
 {
- "count": 3,
+ "count": 10,
  "servers": [
   {
    "name": "Россия 1",
-   "host": "5.42.123.245",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 152,
-   "mbps": 0.0
+   "host": "195.133.23.200",
+   "port": 60606,
+   "protocol": "ss",
+   "latency_ms": 117,
+   "mbps": 47.4
   },
   {
    "name": "Россия 2",
-   "host": "46.243.234.72",
-   "port": 2053,
+   "host": "46.17.40.234",
+   "port": 60110,
+   "protocol": "ss",
+   "latency_ms": 130,
+   "mbps": 46.4
+  },
+  {
+   "name": "Польша 1",
+   "host": "46.16.36.222",
+   "port": 11446,
    "protocol": "vless",
-   "latency_ms": 224,
+   "latency_ms": 123,
    "mbps": 0.0
   },
   {
    "name": "Россия 3",
+   "host": "176.12.66.58",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 124,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 4",
+   "host": "5.42.123.245",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 125,
+   "mbps": 0.0
+  },
+  {
+   "name": "Нидерланды 1",
+   "host": "90.156.218.143",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 134,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 5",
+   "host": "93.183.80.119",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 135,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 6",
+   "host": "85.198.83.81",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 138,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 7",
    "host": "46.243.234.193",
    "port": 2053,
    "protocol": "vless",
-   "latency_ms": 242,
+   "latency_ms": 194,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 8",
+   "host": "46.243.234.72",
+   "port": 2053,
+   "protocol": "vless",
+   "latency_ms": 259,
    "mbps": 0.0
   }
  ]
