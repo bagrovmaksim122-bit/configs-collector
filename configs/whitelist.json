@@ -1,12 +1,28 @@
 {
- "count": 1,
+ "count": 3,
  "servers": [
   {
    "name": "Россия 1",
-   "host": "94.241.143.161",
-   "port": 9871,
+   "host": "194.38.11.86",
+   "port": 65443,
+   "protocol": "ss",
+   "latency_ms": 139,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 2",
+   "host": "186.246.0.111",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 147,
+   "latency_ms": 148,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 3",
+   "host": "93.77.188.102",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 149,
    "mbps": 0.0
   }
  ]
