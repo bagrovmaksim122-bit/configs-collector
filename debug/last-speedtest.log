@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/06 00:56:58 Database migrations applied successfully.
-Total configs: 237
+2026/09/06 05:57:03 Database migrations applied successfully.
+Total configs: 239
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 00:58:12 Full test results for 237 configurations have also been saved to work/speed.csv
-🎉 00:58:12 Test run finished. Found 194 working configs (out of 237).
-🎉 00:58:12 Results have been saved to work/speed.csv
+🎉 05:58:34 Full test results for 239 configurations have also been saved to work/speed.csv
+🎉 05:58:34 Test run finished. Found 187 working configs (out of 239).
+🎉 05:58:34 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-238 work/speed.csv
+240 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-vless://6faa980b-4a0f-4b4d-99f2-03b468da8541@38.150.33.232:12329?security=reality&type=tcp&packetEncoding=xudp&sni=www.amazon.com&fp=chrome&flow=xtls-rprx-vision&pbk=dpG1tE9V93FM9IJeYC5-n_7RJxX7jOwrWLbQJgZpFFo#c48,passed,,reality,38.150.33.232,69,200,89.296616,85.309204,US,69,8,1,1,cloudflare.com=ok(69ms)
-vless://c543f497-6a6d-4842-8317-a5f62ea56dc2@23.94.227.94:15884?type=raw&security=reality&fp=ios&pbk=rZAYGSqaklKNltwTGPpAok74VYCxV9uKvrOyydSn9UE&sid=a391369e7596&sni=www.intel.com#c49,passed,,reality,23.94.227.94,72,200,168.87492,96.86192,US,72,8,1,1,cloudflare.com=ok(72ms)
-vless://7e81824b-35e0-4eb1-89e9-592f0c92aa6b@172.67.139.6:443?encryption=none&security=tls&sni=yx.zhourf2006.dpdns.org&type=ws#c40,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": io: read/write on closed pipe; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": io: read/write on closed pipe",tls,104.28.166.54,147,200,0,0,US,146,3,1,1,cloudflare.com=ok(147ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c56,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,41,200,647.3777,652.8531,US,41,8,1,1,cloudflare.com=ok(41ms)
+vless://43a13764-23dd-4e01-8b79-cde8a16e13ce@204.48.20.223:30906?security=reality&type=raw&sni=www.cloudflare.com&fp=chrome&sid=17a94dc584e3&pbk=HnQ_s7eu3XUu6upzLoe0jj5ZgsYvM7KXuMG41IwN4R0&encryption=none#c55,passed,,reality,204.48.20.223,49,200,712.58075,507.42712,US,49,8,1,1,cloudflare.com=ok(49ms)
+vless://0c6b632a-cd96-4b74-9b51-151e3b5697db@45.138.100.226:2083?encryption=none&fp=chrome&security=tls&serviceName=grpc&sni=using.neobo-tooth.ru&type=grpc#c59,passed,,tls,45.138.100.226,62,200,48.112885,280.06833,US,62,0,1,1,cloudflare.com=ok(62ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Sep  6 00:56 .
-drwxr-x--- 12 runner runner  4096 Sep  6 00:56 ..
--rw-r--r--  1 runner runner  4096 Sep  6 00:56 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep  6 00:56 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep  6 00:56 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Sep  6 05:57 .
+drwxr-x--- 12 runner runner  4096 Sep  6 05:57 ..
+-rw-r--r--  1 runner runner  4096 Sep  6 05:57 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Sep  6 05:57 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Sep  6 05:57 xray-knife.db-wal
