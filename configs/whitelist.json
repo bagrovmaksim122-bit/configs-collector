@@ -1,12 +1,20 @@
 {
- "count": 1,
+ "count": 2,
  "servers": [
   {
-   "name": "Тайвань 1",
+   "name": "Германия 1",
    "host": "83.147.255.88",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 176,
+   "latency_ms": 114,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 1",
+   "host": "95.163.214.43",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 145,
    "mbps": 0.0
   }
  ]
