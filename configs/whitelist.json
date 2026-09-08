@@ -1,28 +1,44 @@
 {
- "count": 3,
+ "count": 5,
  "servers": [
   {
-   "name": "Россия 1",
-   "host": "95.163.214.43",
+   "name": "Польша 1",
+   "host": "95.213.184.165",
+   "port": 9844,
+   "protocol": "vless",
+   "latency_ms": 118,
+   "mbps": 3.1
+  },
+  {
+   "name": "США 1",
+   "host": "46.173.16.77",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 158,
+   "latency_ms": 144,
+   "mbps": 2.9
+  },
+  {
+   "name": "Польша 2",
+   "host": "84.201.142.221",
+   "port": 33743,
+   "protocol": "vless",
+   "latency_ms": 139,
+   "mbps": 0.4
+  },
+  {
+   "name": "Россия 1",
+   "host": "193.233.221.62",
+   "port": 2083,
+   "protocol": "vless",
+   "latency_ms": 152,
    "mbps": 0.0
   },
   {
    "name": "Россия 2",
-   "host": "193.233.221.62",
-   "port": 2083,
+   "host": "95.163.214.43",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 162,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 3",
-   "host": "62.233.39.7",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 1150,
+   "latency_ms": 163,
    "mbps": 0.0
   }
  ]
