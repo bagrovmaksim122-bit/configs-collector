@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/13 18:12:19 Database migrations applied successfully.
-Total configs: 139
+2026/09/13 20:49:25 Database migrations applied successfully.
+Total configs: 181
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 18:13:31 Full test results for 139 configurations have also been saved to work/speed.csv
-🎉 18:13:31 Test run finished. Found 78 working configs (out of 139).
-🎉 18:13:31 Results have been saved to work/speed.csv
+🎉 20:50:42 Full test results for 181 configurations have also been saved to work/speed.csv
+🎉 20:50:42 Test run finished. Found 102 working configs (out of 181).
+🎉 20:50:42 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-140 work/speed.csv
+182 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c34,passed,,,108.181.0.177,177,200,97.73567,99.97258,US,177,56,1,1,cloudflare.com=ok(177ms)
-vless://56a1b253-cde4-490f-9c5e-09a523882bdd@172.233.139.46:53734?security=reality&flow=xtls-rprx-vision&sni=www.tesla.com&type=tcp&host=v2rayNplus--v2rayNplus--v2rayNplus--&pbk=JAG5rl6KEt7KAV0y8Z2x6orWHymCXRSX49SkEnEftWU&sid=a56d7d8da977f860&fp=chrome#c37,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,2a01:7e03::2000:64ff:fe02:35cb,272,200,0,53.20943,US,272,58,1,1,cloudflare.com=ok(272ms)
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c38,passed,,reality,2604:2dc0:200:26db::,296,200,89.81894,8.705192,US,296,74,1,1,cloudflare.com=ok(296ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c53,passed,,,108.181.0.177,120,200,145.48775,106.853836,US,120,36,1,1,cloudflare.com=ok(120ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c46,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,2604:2dc0:200:26c3::,129,200,0,79.987885,US,129,29,1,1,cloudflare.com=ok(129ms)
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.214:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c44,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,2604:2dc0:200:26d6::,129,200,0,9.458283,US,129,29,1,1,cloudflare.com=ok(129ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Sep 13 18:12 .
-drwxr-x--- 12 runner runner  4096 Sep 13 18:12 ..
--rw-r--r--  1 runner runner  4096 Sep 13 18:12 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep 13 18:12 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep 13 18:12 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Sep 13 20:49 .
+drwxr-x--- 12 runner runner  4096 Sep 13 20:49 ..
+-rw-r--r--  1 runner runner  4096 Sep 13 20:49 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Sep 13 20:49 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Sep 13 20:49 xray-knife.db-wal
