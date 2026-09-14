@@ -1,588 +1,388 @@
 {
- "count": 123,
+ "count": 95,
  "servers": [
   {
    "name": "США 1",
-   "host": "15.204.97.195",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 8,
-   "mbps": 284.6
+   "host": "198.98.53.130",
+   "port": 443,
+   "protocol": "ss",
+   "latency_ms": 7,
+   "mbps": 651.4
   },
   {
    "name": "США 2",
-   "host": "172.235.38.85",
-   "port": 42942,
-   "protocol": "vless",
-   "latency_ms": 29,
-   "mbps": 203.0
-  },
-  {
-   "name": "США 3",
-   "host": "108.181.0.177",
-   "port": 8388,
-   "protocol": "ss",
-   "latency_ms": 28,
-   "mbps": 202.8
-  },
-  {
-   "name": "США 4",
-   "host": "172.233.139.46",
-   "port": 53734,
-   "protocol": "vless",
-   "latency_ms": 32,
-   "mbps": 202.2
-  },
-  {
-   "name": "США 5",
    "host": "15.204.97.219",
    "port": 23576,
    "protocol": "vless",
-   "latency_ms": 8,
-   "mbps": 164.1
+   "latency_ms": 64,
+   "mbps": 94.7
   },
   {
-   "name": "США 6",
-   "host": "147.78.182.4",
-   "port": 443,
+   "name": "США 3",
+   "host": "15.204.97.195",
+   "port": 23576,
    "protocol": "vless",
-   "latency_ms": 68,
-   "mbps": 84.3
-  },
-  {
-   "name": "США 7",
-   "host": "147.78.182.3",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 77,
-   "mbps": 81.3
-  },
-  {
-   "name": "США 8",
-   "host": "192.166.82.74",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 80,
-   "mbps": 78.0
-  },
-  {
-   "name": "Япония 1",
-   "host": "45.66.218.187",
-   "port": 50159,
-   "protocol": "vless",
-   "latency_ms": 93,
-   "mbps": 59.2
-  },
-  {
-   "name": "Канада 1",
-   "host": "51.222.12.127",
-   "port": 445,
-   "protocol": "ss",
-   "latency_ms": 72,
-   "mbps": 52.9
-  },
-  {
-   "name": "Япония 2",
-   "host": "154.31.114.248",
-   "port": 50159,
-   "protocol": "vless",
-   "latency_ms": 97,
-   "mbps": 50.6
+   "latency_ms": 67,
+   "mbps": 93.5
   },
   {
    "name": "Германия 1",
-   "host": "188.114.97.8",
-   "port": 8443,
+   "host": "199.232.78.101",
+   "port": 443,
+   "protocol": "trojan",
+   "latency_ms": 1,
+   "mbps": 90.1
+  },
+  {
+   "name": "США 4",
+   "host": "15.204.97.197",
+   "port": 23576,
    "protocol": "vless",
-   "latency_ms": 5,
-   "mbps": 47.3
+   "latency_ms": 64,
+   "mbps": 89.5
   },
   {
    "name": "Нидерланды 1",
-   "host": "51.158.206.86",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 139,
-   "mbps": 44.8
-  },
-  {
-   "name": "Нидерланды 2",
-   "host": "51.158.206.80",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 137,
-   "mbps": 44.8
-  },
-  {
-   "name": "Нидерланды 3",
-   "host": "51.158.206.96",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 137,
-   "mbps": 44.4
-  },
-  {
-   "name": "Канада 2",
-   "host": "51.79.85.185",
-   "port": 8118,
-   "protocol": "ss",
-   "latency_ms": 72,
-   "mbps": 44.3
-  },
-  {
-   "name": "Нидерланды 4",
-   "host": "51.158.206.19",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 138,
-   "mbps": 44.0
-  },
-  {
-   "name": "Нидерланды 5",
-   "host": "51.158.206.8",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 140,
-   "mbps": 43.4
-  },
-  {
-   "name": "Нидерланды 6",
-   "host": "51.158.206.29",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 148,
-   "mbps": 43.3
-  },
-  {
-   "name": "Австрия 1",
-   "host": "89.105.206.123",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 140,
-   "mbps": 43.2
-  },
-  {
-   "name": "Нидерланды 7",
-   "host": "51.158.206.93",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 140,
-   "mbps": 43.2
-  },
-  {
-   "name": "Нидерланды 8",
-   "host": "51.158.206.25",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 137,
-   "mbps": 43.0
-  },
-  {
-   "name": "Нидерланды 9",
-   "host": "51.158.206.12",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 137,
-   "mbps": 42.7
-  },
-  {
-   "name": "Нидерланды 10",
-   "host": "51.158.206.20",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 146,
-   "mbps": 42.6
-  },
-  {
-   "name": "Нидерланды 11",
-   "host": "51.158.206.97",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 143,
-   "mbps": 42.6
-  },
-  {
-   "name": "Нидерланды 12",
-   "host": "51.158.206.34",
-   "port": 23576,
-   "protocol": "vless",
-   "latency_ms": 135,
-   "mbps": 41.9
-  },
-  {
-   "name": "Франция 1",
-   "host": "162.19.10.99",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 140,
-   "mbps": 41.8
-  },
-  {
-   "name": "Нидерланды 13",
-   "host": "108.181.58.239",
-   "port": 8388,
-   "protocol": "ss",
-   "latency_ms": 135,
-   "mbps": 41.7
-  },
-  {
-   "name": "США 9",
-   "host": "15.204.246.107",
-   "port": 8888,
-   "protocol": "ss",
-   "latency_ms": 61,
-   "mbps": 41.6
-  },
-  {
-   "name": "Германия 2",
-   "host": "51.38.127.93",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 145,
-   "mbps": 41.2
-  },
-  {
-   "name": "Нидерланды 14",
    "host": "51.158.206.103",
    "port": 23576,
    "protocol": "vless",
-   "latency_ms": 143,
-   "mbps": 40.8
+   "latency_ms": 89,
+   "mbps": 70.1
   },
   {
-   "name": "Германия 3",
-   "host": "170.101.109.37",
-   "port": 443,
+   "name": "Нидерланды 2",
+   "host": "51.158.206.8",
+   "port": 23576,
    "protocol": "vless",
-   "latency_ms": 145,
-   "mbps": 38.6
+   "latency_ms": 83,
+   "mbps": 69.7
   },
   {
-   "name": "Франция 2",
-   "host": "81.95.4.189",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 151,
-   "mbps": 38.6
-  },
-  {
-   "name": "Австрия 2",
-   "host": "131.123.25.3",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 158,
-   "mbps": 38.4
-  },
-  {
-   "name": "Италия 1",
-   "host": "57.131.48.45",
-   "port": 8388,
-   "protocol": "ss",
-   "latency_ms": 157,
-   "mbps": 38.3
-  },
-  {
-   "name": "Франция 3",
+   "name": "Франция 1",
    "host": "62.210.91.2",
    "port": 23576,
    "protocol": "vless",
-   "latency_ms": 152,
-   "mbps": 38.1
+   "latency_ms": 94,
+   "mbps": 69.3
+  },
+  {
+   "name": "Нидерланды 3",
+   "host": "51.158.206.86",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 87,
+   "mbps": 67.2
+  },
+  {
+   "name": "Нидерланды 4",
+   "host": "51.158.206.12",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 88,
+   "mbps": 66.9
+  },
+  {
+   "name": "Нидерланды 5",
+   "host": "51.158.206.80",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 93,
+   "mbps": 66.8
+  },
+  {
+   "name": "Нидерланды 6",
+   "host": "51.158.206.96",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 82,
+   "mbps": 66.8
+  },
+  {
+   "name": "Германия 2",
+   "host": "170.101.109.37",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 89,
+   "mbps": 66.0
+  },
+  {
+   "name": "Франция 2",
+   "host": "162.19.10.99",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 90,
+   "mbps": 65.8
+  },
+  {
+   "name": "Нидерланды 7",
+   "host": "51.158.206.29",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 83,
+   "mbps": 65.7
+  },
+  {
+   "name": "Нидерланды 8",
+   "host": "51.158.206.19",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 85,
+   "mbps": 65.6
+  },
+  {
+   "name": "Нидерланды 9",
+   "host": "51.158.206.34",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 88,
+   "mbps": 64.7
+  },
+  {
+   "name": "Нидерланды 10",
+   "host": "51.158.206.97",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 93,
+   "mbps": 64.3
+  },
+  {
+   "name": "Нидерланды 11",
+   "host": "51.158.206.20",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 90,
+   "mbps": 63.6
+  },
+  {
+   "name": "Нидерланды 12",
+   "host": "51.158.206.25",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 88,
+   "mbps": 62.7
+  },
+  {
+   "name": "Нидерланды 13",
+   "host": "108.181.126.122",
+   "port": 8388,
+   "protocol": "ss",
+   "latency_ms": 85,
+   "mbps": 62.2
+  },
+  {
+   "name": "Нидерланды 14",
+   "host": "51.158.206.93",
+   "port": 23576,
+   "protocol": "vless",
+   "latency_ms": 88,
+   "mbps": 62.0
+  },
+  {
+   "name": "Германия 3",
+   "host": "185.226.172.8",
+   "port": 8008,
+   "protocol": "ss",
+   "latency_ms": 92,
+   "mbps": 60.8
+  },
+  {
+   "name": "Норвегия 1",
+   "host": "89.185.81.95",
+   "port": 8765,
+   "protocol": "vless",
+   "latency_ms": 97,
+   "mbps": 59.5
   },
   {
    "name": "Польша 1",
    "host": "51.83.192.80",
    "port": 8388,
    "protocol": "ss",
-   "latency_ms": 163,
-   "mbps": 37.4
-  },
-  {
-   "name": "Польша 2",
-   "host": "144.31.2.58",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 153,
-   "mbps": 37.2
-  },
-  {
-   "name": "Германия 4",
-   "host": "162.249.126.228",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 150,
-   "mbps": 37.0
-  },
-  {
-   "name": "Сингапур 1",
-   "host": "146.235.16.130",
-   "port": 19825,
-   "protocol": "vless",
-   "latency_ms": 160,
-   "mbps": 36.8
-  },
-  {
-   "name": "Германия 5",
-   "host": "185.226.172.8",
-   "port": 8008,
-   "protocol": "ss",
-   "latency_ms": 151,
-   "mbps": 36.8
+   "latency_ms": 104,
+   "mbps": 55.1
   },
   {
    "name": "Финляндия 1",
-   "host": "144.31.90.65",
+   "host": "138.124.80.245",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 161,
-   "mbps": 36.0
-  },
-  {
-   "name": "Чехия 1",
-   "host": "188.130.208.210",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 156,
-   "mbps": 35.8
+   "latency_ms": 115,
+   "mbps": 51.2
   },
   {
    "name": "Финляндия 2",
    "host": "213.176.17.50",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 166,
-   "mbps": 35.6
-  },
-  {
-   "name": "Финляндия 3",
-   "host": "170.168.97.8",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 171,
-   "mbps": 35.3
-  },
-  {
-   "name": "Польша 3",
-   "host": "194.61.121.93",
-   "port": 7538,
-   "protocol": "ss",
-   "latency_ms": 158,
-   "mbps": 35.2
-  },
-  {
-   "name": "Финляндия 4",
-   "host": "89.47.55.9",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 166,
-   "mbps": 35.0
-  },
-  {
-   "name": "Сингапур 2",
-   "host": "217.60.7.121",
-   "port": 2053,
-   "protocol": "vless",
-   "latency_ms": 59,
-   "mbps": 34.9
+   "latency_ms": 120,
+   "mbps": 49.6
   },
   {
    "name": "Латвия 1",
    "host": "150.241.75.198",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 169,
-   "mbps": 32.6
-  },
-  {
-   "name": "Франция 4",
-   "host": "31.185.105.168",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 149,
-   "mbps": 32.6
-  },
-  {
-   "name": "Финляндия 5",
-   "host": "144.31.243.2",
-   "port": 16015,
-   "protocol": "ss",
-   "latency_ms": 170,
-   "mbps": 31.5
-  },
-  {
-   "name": "Сингапур 3",
-   "host": "163.128.99.36",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 161,
-   "mbps": 29.3
-  },
-  {
-   "name": "Сингапур 4",
-   "host": "176.97.64.144",
-   "port": 8388,
-   "protocol": "ss",
-   "latency_ms": 160,
-   "mbps": 27.3
-  },
-  {
-   "name": "Финляндия 6",
-   "host": "144.31.90.72",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 160,
-   "mbps": 24.7
+   "latency_ms": 125,
+   "mbps": 47.2
   },
   {
    "name": "Турция 1",
+   "host": "13.143.137.164",
+   "port": 9443,
+   "protocol": "vless",
+   "latency_ms": 122,
+   "mbps": 46.2
+  },
+  {
+   "name": "Канада 1",
+   "host": "51.222.12.127",
+   "port": 445,
+   "protocol": "ss",
+   "latency_ms": 47,
+   "mbps": 44.7
+  },
+  {
+   "name": "Сингапур 1",
+   "host": "217.60.7.121",
+   "port": 2053,
+   "protocol": "vless",
+   "latency_ms": 31,
+   "mbps": 37.2
+  },
+  {
+   "name": "Япония 1",
+   "host": "45.66.218.187",
+   "port": 50159,
+   "protocol": "vless",
+   "latency_ms": 162,
+   "mbps": 35.5
+  },
+  {
+   "name": "Финляндия 3",
+   "host": "144.31.243.2",
+   "port": 16015,
+   "protocol": "ss",
+   "latency_ms": 118,
+   "mbps": 34.6
+  },
+  {
+   "name": "Сингапур 2",
+   "host": "146.235.16.130",
+   "port": 19825,
+   "protocol": "vless",
+   "latency_ms": 223,
+   "mbps": 26.7
+  },
+  {
+   "name": "Сингапур 3",
+   "host": "176.97.64.144",
+   "port": 8388,
+   "protocol": "ss",
+   "latency_ms": 225,
+   "mbps": 22.3
+  },
+  {
+   "name": "Канада 2",
+   "host": "51.79.85.185",
+   "port": 8118,
+   "protocol": "ss",
+   "latency_ms": 14,
+   "mbps": 15.8
+  },
+  {
+   "name": "Турция 2",
    "host": "107.161.174.26",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 180,
-   "mbps": 23.4
+   "latency_ms": 123,
+   "mbps": 14.5
   },
   {
-   "name": "Финляндия 7",
-   "host": "89.47.55.8",
+   "name": "Франция 3",
+   "host": "81.95.4.189",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 168,
-   "mbps": 18.3
+   "latency_ms": 92,
+   "mbps": 6.5
   },
   {
-   "name": "США 10",
-   "host": "15.204.247.124",
-   "port": 2375,
+   "name": "Сербия 1",
+   "host": "150.40.126.18",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 131,
+   "mbps": 2.0
+  },
+  {
+   "name": "Болгария 1",
+   "host": "45.9.156.28",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 119,
+   "mbps": 1.3
+  },
+  {
+   "name": "Япония 2",
+   "host": "154.31.114.248",
+   "port": 50159,
+   "protocol": "vless",
+   "latency_ms": 157,
+   "mbps": 0.8
+  },
+  {
+   "name": "Индонезия 1",
+   "host": "103.160.63.199",
+   "port": 31348,
    "protocol": "ss",
-   "latency_ms": 61,
-   "mbps": 18.1
-  },
-  {
-   "name": "Германия 6",
-   "host": "199.232.78.101",
-   "port": 443,
-   "protocol": "trojan",
-   "latency_ms": 5,
-   "mbps": 17.8
-  },
-  {
-   "name": "Гонконг 1",
-   "host": "207.57.131.123",
-   "port": 26631,
-   "protocol": "vless",
-   "latency_ms": 138,
-   "mbps": 8.7
-  },
-  {
-   "name": "США 11",
-   "host": "154.84.56.198",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 33,
-   "mbps": 7.7
-  },
-  {
-   "name": "США 12",
-   "host": "147.78.182.3",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 77,
-   "mbps": 4.3
-  },
-  {
-   "name": "Швеция 1",
-   "host": "170.168.99.8",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 163,
-   "mbps": 2.0
-  },
-  {
-   "name": "Финляндия 8",
-   "host": "89.47.55.8",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 161,
-   "mbps": 2.0
-  },
-  {
-   "name": "Финляндия 9",
-   "host": "89.47.55.9",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 160,
-   "mbps": 1.7
-  },
-  {
-   "name": "Финляндия 10",
-   "host": "170.168.97.8",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 172,
-   "mbps": 1.7
-  },
-  {
-   "name": "Молдова 1",
-   "host": "89.35.14.34",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 192,
-   "mbps": 1.1
+   "latency_ms": 255,
+   "mbps": 0.6
   },
   {
    "name": "Малайзия 1",
    "host": "56.69.159.191",
    "port": 53271,
    "protocol": "vless",
-   "latency_ms": 211,
+   "latency_ms": 227,
    "mbps": 0.2
   },
   {
-   "name": "Япония 3",
-   "host": "18.183.215.124",
-   "port": 28573,
-   "protocol": "vless",
-   "latency_ms": 150,
-   "mbps": 0.2
-  },
-  {
-   "name": "Япония 4",
-   "host": "13.231.19.51",
-   "port": 11690,
-   "protocol": "vless",
-   "latency_ms": 121,
-   "mbps": 0.2
-  },
-  {
-   "name": "Великобритания 1",
-   "host": "3.9.135.156",
-   "port": 51847,
-   "protocol": "vless",
-   "latency_ms": 186,
-   "mbps": 0.2
-  },
-  {
-   "name": "Тайвань 1",
-   "host": "34.80.184.198",
-   "port": 44848,
-   "protocol": "vless",
-   "latency_ms": 339,
-   "mbps": 0.1
-  },
-  {
-   "name": "Гонконг 2",
-   "host": "47.83.4.146",
+   "name": "США 5",
+   "host": "69.46.46.33",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 139,
-   "mbps": 0.1
+   "latency_ms": 1,
+   "mbps": 0.0
+  },
+  {
+   "name": "Франция 4",
+   "host": "104.19.229.21",
+   "port": 443,
+   "protocol": "trojan",
+   "latency_ms": 1,
+   "mbps": 0.0
   },
   {
    "name": "Канада 3",
-   "host": "104.18.38.47",
-   "port": 2087,
+   "host": "104.21.29.250",
+   "port": 443,
+   "protocol": "trojan",
+   "latency_ms": 1,
+   "mbps": 0.0
+  },
+  {
+   "name": "США 6",
+   "host": "151.101.56.6",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 4,
+   "latency_ms": 1,
+   "mbps": 0.0
+  },
+  {
+   "name": "США 7",
+   "host": "151.101.56.7",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 1,
    "mbps": 0.0
   },
   {
@@ -590,143 +390,143 @@
    "host": "172.64.52.230",
    "port": 2087,
    "protocol": "vless",
-   "latency_ms": 4,
-   "mbps": 0.0
-  },
-  {
-   "name": "США 13",
-   "host": "208.103.161.5",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 4,
+   "latency_ms": 1,
    "mbps": 0.0
   },
   {
    "name": "Канада 5",
-   "host": "172.67.132.246",
+   "host": "104.21.90.36",
    "port": 443,
-   "protocol": "ss",
-   "latency_ms": 5,
-   "mbps": 0.0
-  },
-  {
-   "name": "США 14",
-   "host": "167.82.76.7",
-   "port": 443,
-   "protocol": "trojan",
-   "latency_ms": 5,
+   "protocol": "vless",
+   "latency_ms": 1,
    "mbps": 0.0
   },
   {
    "name": "Канада 6",
-   "host": "104.21.29.250",
-   "port": 443,
-   "protocol": "trojan",
-   "latency_ms": 5,
+   "host": "188.114.97.8",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 1,
    "mbps": 0.0
   },
   {
    "name": "Канада 7",
-   "host": "104.21.74.214",
-   "port": 8443,
+   "host": "188.114.96.37",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 1,
    "mbps": 0.0
   },
   {
    "name": "Канада 8",
-   "host": "172.67.220.59",
+   "host": "172.67.139.6",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 1,
    "mbps": 0.0
   },
   {
    "name": "Канада 9",
-   "host": "104.21.90.36",
-   "port": 443,
+   "host": "104.21.74.214",
+   "port": 8443,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 2,
    "mbps": 0.0
   },
   {
    "name": "Канада 10",
-   "host": "104.21.46.14",
+   "host": "172.67.220.59",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 2,
    "mbps": 0.0
   },
   {
    "name": "Канада 11",
-   "host": "104.16.150.108",
-   "port": 2087,
+   "host": "104.21.46.14",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 2,
    "mbps": 0.0
   },
   {
    "name": "Канада 12",
-   "host": "104.21.41.86",
-   "port": 443,
+   "host": "104.16.150.108",
+   "port": 2087,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 2,
    "mbps": 0.0
   },
   {
    "name": "Канада 13",
-   "host": "172.67.139.6",
+   "host": "104.21.41.86",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 5,
+   "latency_ms": 2,
    "mbps": 0.0
   },
   {
    "name": "Канада 14",
-   "host": "104.21.70.21",
+   "host": "104.21.13.183",
    "port": 443,
-   "protocol": "trojan",
-   "latency_ms": 5,
-   "mbps": 0.0
-  },
-  {
-   "name": "Япония 5",
-   "host": "84.247.155.196",
-   "port": 80,
    "protocol": "ss",
-   "latency_ms": 94,
+   "latency_ms": 3,
    "mbps": 0.0
   },
   {
-   "name": "Южная Корея 1",
-   "host": "47.80.14.8",
+   "name": "США 8",
+   "host": "208.103.161.5",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 122,
+   "latency_ms": 3,
    "mbps": 0.0
   },
   {
-   "name": "Тайвань 2",
-   "host": "1.165.7.205",
-   "port": 39817,
+   "name": "США 9",
+   "host": "137.184.218.169",
+   "port": 36925,
    "protocol": "vless",
-   "latency_ms": 132,
+   "latency_ms": 7,
    "mbps": 0.0
   },
   {
-   "name": "Германия 7",
-   "host": "95.85.230.35",
+   "name": "США 10",
+   "host": "147.78.182.4",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 146,
+   "latency_ms": 8,
    "mbps": 0.0
   },
   {
-   "name": "Великобритания 2",
-   "host": "143.246.182.63",
+   "name": "США 11",
+   "host": "147.78.182.3",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 146,
+   "latency_ms": 9,
+   "mbps": 0.0
+  },
+  {
+   "name": "США 12",
+   "host": "147.78.182.3",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 10,
+   "mbps": 0.0
+  },
+  {
+   "name": "США 13",
+   "host": "45.91.138.179",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 26,
+   "mbps": 0.0
+  },
+  {
+   "name": "США 14",
+   "host": "192.166.82.74",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 61,
    "mbps": 0.0
   },
   {
@@ -734,95 +534,79 @@
    "host": "45.144.28.39",
    "port": 2083,
    "protocol": "vless",
-   "latency_ms": 147,
+   "latency_ms": 85,
+   "mbps": 0.0
+  },
+  {
+   "name": "Германия 4",
+   "host": "5.252.102.64",
+   "port": 2063,
+   "protocol": "vless",
+   "latency_ms": 91,
+   "mbps": 0.0
+  },
+  {
+   "name": "Великобритания 1",
+   "host": "143.246.182.63",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 92,
+   "mbps": 0.0
+  },
+  {
+   "name": "Германия 5",
+   "host": "159.195.137.29",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 92,
+   "mbps": 0.0
+  },
+  {
+   "name": "Германия 6",
+   "host": "46.101.196.101",
+   "port": 2096,
+   "protocol": "vless",
+   "latency_ms": 93,
+   "mbps": 0.0
+  },
+  {
+   "name": "Германия 7",
+   "host": "95.85.230.35",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 95,
    "mbps": 0.0
   },
   {
    "name": "Германия 8",
-   "host": "91.228.154.112",
-   "port": 2053,
+   "host": "68.183.65.82",
+   "port": 2083,
    "protocol": "vless",
-   "latency_ms": 150,
+   "latency_ms": 98,
    "mbps": 0.0
   },
   {
    "name": "Германия 9",
-   "host": "46.101.196.101",
-   "port": 2096,
-   "protocol": "vless",
-   "latency_ms": 150,
-   "mbps": 0.0
-  },
-  {
-   "name": "Германия 10",
-   "host": "88.216.132.38",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 151,
-   "mbps": 0.0
-  },
-  {
-   "name": "Германия 11",
-   "host": "159.195.137.29",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 153,
-   "mbps": 0.0
-  },
-  {
-   "name": "Германия 12",
-   "host": "68.183.65.82",
-   "port": 2083,
-   "protocol": "vless",
-   "latency_ms": 154,
-   "mbps": 0.0
-  },
-  {
-   "name": "Германия 13",
-   "host": "77.110.117.199",
-   "port": 9443,
-   "protocol": "vless",
-   "latency_ms": 155,
-   "mbps": 0.0
-  },
-  {
-   "name": "Италия 2",
-   "host": "172.238.232.239",
-   "port": 32833,
-   "protocol": "vless",
-   "latency_ms": 157,
-   "mbps": 0.0
-  },
-  {
-   "name": "Германия 14",
    "host": "87.120.84.32",
    "port": 33843,
    "protocol": "vless",
-   "latency_ms": 158,
+   "latency_ms": 98,
    "mbps": 0.0
   },
   {
-   "name": "Южная Корея 2",
-   "host": "141.164.45.187",
-   "port": 9090,
-   "protocol": "ss",
-   "latency_ms": 159,
-   "mbps": 0.0
-  },
-  {
-   "name": "Финляндия 11",
-   "host": "144.31.90.75",
+   "name": "Польша 2",
+   "host": "144.31.2.58",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 159,
+   "latency_ms": 100,
    "mbps": 0.0
   },
   {
-   "name": "Южная Корея 3",
-   "host": "141.164.45.187",
-   "port": 5498,
-   "protocol": "ss",
-   "latency_ms": 160,
+   "name": "Польша 3",
+   "host": "217.60.33.10",
+   "port": 2083,
+   "protocol": "vless",
+   "latency_ms": 101,
    "mbps": 0.0
   },
   {
@@ -830,159 +614,151 @@
    "host": "54.36.174.134",
    "port": 443,
    "protocol": "ss",
-   "latency_ms": 161,
+   "latency_ms": 104,
    "mbps": 0.0
   },
   {
-   "name": "Сингапур 5",
-   "host": "8.219.144.195",
+   "name": "Польша 5",
+   "host": "54.36.174.140",
    "port": 443,
-   "protocol": "vless",
-   "latency_ms": 162,
+   "protocol": "ss",
+   "latency_ms": 104,
    "mbps": 0.0
   },
   {
-   "name": "Финляндия 12",
-   "host": "138.124.80.245",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 166,
-   "mbps": 0.0
-  },
-  {
-   "name": "Финляндия 13",
+   "name": "Финляндия 4",
    "host": "65.109.238.140",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 175,
+   "latency_ms": 115,
    "mbps": 0.0
   },
   {
-   "name": "Россия 1",
-   "host": "201.24.50.67",
-   "port": 9892,
+   "name": "Турция 3",
+   "host": "185.123.100.56",
+   "port": 8443,
    "protocol": "vless",
-   "latency_ms": 176,
+   "latency_ms": 123,
    "mbps": 0.0
   },
   {
-   "name": "Финляндия 14",
-   "host": "62.233.39.9",
-   "port": 443,
+   "name": "Великобритания 2",
+   "host": "3.9.135.156",
+   "port": 51847,
    "protocol": "vless",
-   "latency_ms": 177,
-   "mbps": 0.0
-  },
-  {
-   "name": "Сингапур 6",
-   "host": "54.251.9.130",
-   "port": 24146,
-   "protocol": "vless",
-   "latency_ms": 179,
-   "mbps": 0.0
-  },
-  {
-   "name": "Сербия 1",
-   "host": "150.40.126.18",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 179,
+   "latency_ms": 124,
    "mbps": 0.0
   },
   {
    "name": "Украина 1",
+   "host": "91.224.86.107",
+   "port": 9830,
+   "protocol": "vless",
+   "latency_ms": 129,
+   "mbps": 0.0
+  },
+  {
+   "name": "Украина 2",
    "host": "91.224.87.22",
-   "port": 9873,
+   "port": 9882,
+   "protocol": "vless",
+   "latency_ms": 130,
+   "mbps": 0.0
+  },
+  {
+   "name": "Польша 6",
+   "host": "185.141.227.155",
+   "port": 20002,
+   "protocol": "vless",
+   "latency_ms": 130,
+   "mbps": 0.0
+  },
+  {
+   "name": "Молдова 1",
+   "host": "89.35.14.34",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 135,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 1",
+   "host": "212.233.120.1",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 137,
+   "mbps": 0.0
+  },
+  {
+   "name": "Германия 10",
+   "host": "194.58.41.39",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 137,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 2",
+   "host": "168.222.194.138",
+   "port": 9880,
+   "protocol": "vless",
+   "latency_ms": 145,
+   "mbps": 0.0
+  },
+  {
+   "name": "Чехия 1",
+   "host": "78.159.247.246",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 163,
+   "mbps": 0.0
+  },
+  {
+   "name": "Япония 3",
+   "host": "84.247.155.196",
+   "port": 80,
+   "protocol": "ss",
+   "latency_ms": 167,
+   "mbps": 0.0
+  },
+  {
+   "name": "Южная Корея 1",
+   "host": "43.133.237.158",
+   "port": 8443,
    "protocol": "vless",
    "latency_ms": 180,
    "mbps": 0.0
   },
   {
-   "name": "Украина 2",
-   "host": "91.224.86.107",
-   "port": 9830,
-   "protocol": "vless",
-   "latency_ms": 182,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 2",
-   "host": "212.233.120.1",
+   "name": "Гонконг 1",
+   "host": "47.76.172.190",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 184,
+   "latency_ms": 198,
    "mbps": 0.0
   },
   {
-   "name": "Украина 3",
-   "host": "91.224.87.22",
-   "port": 9882,
+   "name": "Япония 4",
+   "host": "18.183.215.124",
+   "port": 28573,
    "protocol": "vless",
-   "latency_ms": 184,
-   "mbps": 0.0
-  },
-  {
-   "name": "Польша 5",
-   "host": "185.141.227.155",
-   "port": 20002,
-   "protocol": "vless",
-   "latency_ms": 186,
-   "mbps": 0.0
-  },
-  {
-   "name": "Турция 2",
-   "host": "185.123.100.56",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 187,
-   "mbps": 0.0
-  },
-  {
-   "name": "Турция 3",
-   "host": "13.143.137.164",
-   "port": 9443,
-   "protocol": "vless",
-   "latency_ms": 190,
-   "mbps": 0.0
-  },
-  {
-   "name": "Южная Корея 4",
-   "host": "141.164.45.187",
-   "port": 6679,
-   "protocol": "ss",
-   "latency_ms": 194,
-   "mbps": 0.0
-  },
-  {
-   "name": "Болгария 1",
-   "host": "45.9.156.28",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 195,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 3",
-   "host": "168.222.194.138",
-   "port": 9880,
-   "protocol": "vless",
-   "latency_ms": 201,
-   "mbps": 0.0
-  },
-  {
-   "name": "Сингапур 7",
-   "host": "54.169.200.246",
-   "port": 41688,
-   "protocol": "vless",
-   "latency_ms": 225,
+   "latency_ms": 224,
    "mbps": 0.0
   },
   {
    "name": "Чехия 2",
-   "host": "78.159.247.246",
+   "host": "188.130.208.210",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 227,
+   "latency_ms": 1131,
+   "mbps": 0.0
+  },
+  {
+   "name": "Великобритания 3",
+   "host": "82.38.171.81",
+   "port": 10451,
+   "protocol": "hysteria2",
+   "latency_ms": 9999,
    "mbps": 0.0
   }
  ]
