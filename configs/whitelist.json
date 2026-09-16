@@ -1,64 +1,72 @@
 {
- "count": 9,
+ "count": 10,
  "servers": [
   {
    "name": "Россия 1",
-   "host": "193.17.92.57",
-   "port": 2053,
+   "host": "188.225.45.152",
+   "port": 12096,
    "protocol": "vless",
-   "latency_ms": 247,
-   "mbps": 1.7
+   "latency_ms": 147,
+   "mbps": 0.0
   },
   {
    "name": "Россия 2",
-   "host": "89.23.113.175",
-   "port": 443,
+   "host": "45.139.27.245",
+   "port": 9443,
    "protocol": "vless",
-   "latency_ms": 180,
+   "latency_ms": 150,
    "mbps": 0.0
   },
   {
    "name": "Россия 3",
-   "host": "188.225.45.152",
-   "port": 12096,
+   "host": "45.139.27.245",
+   "port": 448,
    "protocol": "vless",
-   "latency_ms": 183,
-   "mbps": 0.0
-  },
-  {
-   "name": "Финляндия 1",
-   "host": "188.124.36.63",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 187,
-   "mbps": 0.0
-  },
-  {
-   "name": "Швеция 1",
-   "host": "5.129.198.223",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 195,
+   "latency_ms": 152,
    "mbps": 0.0
   },
   {
    "name": "Россия 4",
-   "host": "45.139.27.245",
-   "port": 9443,
+   "host": "193.17.92.57",
+   "port": 2053,
    "protocol": "vless",
-   "latency_ms": 213,
+   "latency_ms": 152,
    "mbps": 0.0
   },
   {
    "name": "Россия 5",
-   "host": "45.139.27.245",
-   "port": 448,
+   "host": "5.129.198.223",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 243,
+   "latency_ms": 155,
    "mbps": 0.0
   },
   {
    "name": "Россия 6",
+   "host": "89.23.113.175",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 157,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 7",
+   "host": "188.124.36.63",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 168,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 8",
+   "host": "62.109.31.124",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 168,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 9",
    "host": "91.240.86.70",
    "port": 24443,
    "protocol": "hysteria2",
@@ -66,7 +74,7 @@
    "mbps": 0.0
   },
   {
-   "name": "Россия 7",
+   "name": "Россия 10",
    "host": "91.240.86.70",
    "port": 22443,
    "protocol": "hysteria2",
