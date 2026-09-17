@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/17 13:27:06 Database migrations applied successfully.
-Total configs: 104
+2026/09/17 18:13:06 Database migrations applied successfully.
+Total configs: 93
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 13:28:15 Full test results for 104 configurations have also been saved to work/speed.csv
-🎉 13:28:15 Test run finished. Found 51 working configs (out of 104).
-🎉 13:28:15 Results have been saved to work/speed.csv
+🎉 18:14:12 Full test results for 93 configurations have also been saved to work/speed.csv
+🎉 18:14:12 Test run finished. Found 52 working configs (out of 93).
+🎉 18:14:12 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-105 work/speed.csv
+94 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c36,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,60,200,659.3593,455.808,US,60,7,1,1,cloudflare.com=ok(60ms)
-vless://eaf5b0da-abf3-4128-af9c-93fc11344ab9@147.45.60.91:443?type=xhttp&security=tls&encryption=none&sni=us.lebedvpn.cc&alpn=h3&path=%2F124c27d64c18&mode=stream-up&host=us.lebedvpn.cc&fp=qq#c37,passed,,tls,147.45.60.91,84,200,66.45519,249.95299,US,84,0,1,1,cloudflare.com=ok(84ms)
-ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M=@51.222.200.165:5000#c39,passed,,,51.222.200.165,126,200,49.89237,46.500603,CA,125,14,1,1,cloudflare.com=ok(126ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c19,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,60,200,426.22903,416.13098,US,60,11,1,1,cloudflare.com=ok(60ms)
+vless://eaf5b0da-abf3-4128-af9c-93fc11344ab9@147.45.60.91:443?type=xhttp&security=tls&encryption=none&sni=us.lebedvpn.cc&alpn=h3&path=%2F124c27d64c18&mode=stream-up&host=us.lebedvpn.cc&fp=qq#c23,passed,,tls,147.45.60.91,78,200,276.29242,206.38463,US,77,0,1,1,cloudflare.com=ok(78ms)
+ss://YWVzLTI1Ni1nY206Rm9PaUdsa0FBOXlQRUdQ@15.204.246.132:7307#c12,passed,,,15.204.246.132,216,200,31.162304,10.291341,US,216,6,1,1,cloudflare.com=ok(216ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Sep 17 13:27 .
-drwxr-x--- 12 runner runner  4096 Sep 17 13:27 ..
--rw-r--r--  1 runner runner  4096 Sep 17 13:27 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep 17 13:27 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep 17 13:27 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Sep 17 18:13 .
+drwxr-x--- 12 runner runner  4096 Sep 17 18:13 ..
+-rw-r--r--  1 runner runner  4096 Sep 17 18:13 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Sep 17 18:13 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Sep 17 18:13 xray-knife.db-wal
