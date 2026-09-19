@@ -1,42 +1,26 @@
 {
- "count": 5,
+ "count": 3,
  "servers": [
   {
-   "name": "Нидерланды 1",
-   "host": "84.201.146.8",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 127,
-   "mbps": 32.7
-  },
-  {
    "name": "Россия 1",
-   "host": "189.74.114.107",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 86,
-   "mbps": 0.0
+   "host": "91.240.86.70",
+   "port": 22443,
+   "protocol": "hysteria2",
+   "latency_ms": 9999,
+   "mbps": 37.8
   },
   {
    "name": "Россия 2",
-   "host": "189.74.114.132",
+   "host": "84.201.146.8",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 86,
+   "latency_ms": 174,
    "mbps": 0.0
   },
   {
    "name": "Россия 3",
    "host": "91.240.86.70",
    "port": 24443,
-   "protocol": "hysteria2",
-   "latency_ms": 9999,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 4",
-   "host": "91.240.86.70",
-   "port": 22443,
    "protocol": "hysteria2",
    "latency_ms": 9999,
    "mbps": 0.0
