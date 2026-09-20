@@ -3,30 +3,22 @@
  "servers": [
   {
    "name": "Россия 1",
-   "host": "91.240.86.70",
-   "port": 22443,
-   "protocol": "hysteria2",
-   "latency_ms": 9999,
-   "mbps": 40.4
-  },
-  {
-   "name": "Россия 2",
    "host": "95.129.236.239",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 114,
+   "latency_ms": 88,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 2",
+   "host": "5.181.109.103",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 147,
    "mbps": 0.0
   },
   {
    "name": "Россия 3",
-   "host": "5.181.109.103",
-   "port": 443,
-   "protocol": "vless",
-   "latency_ms": 183,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 4",
    "host": "87.239.111.109",
    "port": 1935,
    "protocol": "hysteria2",
@@ -34,9 +26,17 @@
    "mbps": 0.0
   },
   {
-   "name": "Россия 5",
+   "name": "Россия 4",
    "host": "91.240.86.70",
    "port": 24443,
+   "protocol": "hysteria2",
+   "latency_ms": 9999,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 5",
+   "host": "91.240.86.70",
+   "port": 22443,
    "protocol": "hysteria2",
    "latency_ms": 9999,
    "mbps": 0.0
