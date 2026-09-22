@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/22 00:06:14 Database migrations applied successfully.
-Total configs: 102
+2026/09/22 04:54:34 Database migrations applied successfully.
+Total configs: 111
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 00:07:22 Full test results for 102 configurations have also been saved to work/speed.csv
-🎉 00:07:22 Test run finished. Found 60 working configs (out of 102).
-🎉 00:07:22 Results have been saved to work/speed.csv
+🎉 04:55:44 Full test results for 111 configurations have also been saved to work/speed.csv
+🎉 04:55:44 Test run finished. Found 59 working configs (out of 111).
+🎉 04:55:44 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-103 work/speed.csv
+112 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#c22,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,37.19.198.236,56,200,0,171.7257,US,56,13,1,1,cloudflare.com=ok(56ms)
-vless://bbfd1f68-ec64-452f-8404-9e2bcf1df951@138.124.60.146:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0&security=reality&sni=usa.oblaco.bet&type=tcp#c23,passed,,reality,138.124.60.146,93,200,393.81696,423.8368,US,93,16,1,1,cloudflare.com=ok(93ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c31,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.169,114,200,0,204.55418,US,114,34,1,1,cloudflare.com=ok(114ms)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c27,passed,,,156.146.38.169,63,200,243.88287,228.27914,US,63,21,1,1,cloudflare.com=ok(63ms)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c23,passed,,,156.146.38.170,78,200,233.79556,272.34927,US,78,23,1,1,cloudflare.com=ok(78ms)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#c24,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.168,87,200,0,261.63202,US,87,28,1,1,cloudflare.com=ok(87ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Sep 22 00:06 .
-drwxr-x--- 12 runner runner  4096 Sep 22 00:06 ..
--rw-r--r--  1 runner runner  4096 Sep 22 00:06 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep 22 00:06 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep 22 00:06 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Sep 22 04:54 .
+drwxr-x--- 12 runner runner  4096 Sep 22 04:54 ..
+-rw-r--r--  1 runner runner  4096 Sep 22 04:54 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Sep 22 04:54 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Sep 22 04:54 xray-knife.db-wal
