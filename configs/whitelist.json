@@ -3,18 +3,18 @@
  "servers": [
   {
    "name": "Россия 1",
-   "host": "66.90.90.164",
-   "port": 8443,
-   "protocol": "vless",
-   "latency_ms": 133,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 2",
    "host": "91.240.86.70",
    "port": 22443,
    "protocol": "hysteria2",
    "latency_ms": 9999,
+   "mbps": 49.9
+  },
+  {
+   "name": "Россия 2",
+   "host": "66.90.90.164",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 121,
    "mbps": 0.0
   },
   {
