@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/25 01:29:29 Database migrations applied successfully.
-Total configs: 100
+2026/09/25 07:47:29 Database migrations applied successfully.
+Total configs: 103
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 01:30:33 Full test results for 100 configurations have also been saved to work/speed.csv
-🎉 01:30:33 Test run finished. Found 57 working configs (out of 100).
-🎉 01:30:33 Results have been saved to work/speed.csv
+🎉 07:48:36 Full test results for 103 configurations have also been saved to work/speed.csv
+🎉 07:48:36 Test run finished. Found 57 working configs (out of 103).
+🎉 07:48:36 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-101 work/speed.csv
+104 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c18,passed,,reality,47.253.226.114,43,200,35.795433,476.83395,US,43,2,1,1,cloudflare.com=ok(43ms)
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c28,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,65,200,0,401.37567,US,64,7,1,1,cloudflare.com=ok(65ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c33,passed,,,156.146.38.169,123,200,141.00879,196.67616,US,122,37,1,1,cloudflare.com=ok(123ms)
+vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c25,passed,,reality,47.253.226.114,55,200,9.217284,5.894857,US,55,6,1,1,cloudflare.com=ok(55ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c27,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,56,200,0,237.60765,US,56,12,1,1,cloudflare.com=ok(56ms)
+vless://a4c6bab6-bd83-4b72-8c78-99e96f40cde3@47.253.144.114:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&pbk=yEpPLsSy8aCXkQ4wzc9t38gQACipc_k54upD9fJj5y4&sid=4679f07417e9feb4&type=tcp&fp=firefox#c17,passed,,reality,47.253.144.114,66,200,7.7396555,231.27205,US,66,6,1,1,cloudflare.com=ok(66ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Sep 25 01:29 .
-drwxr-x--- 12 runner runner  4096 Sep 25 01:29 ..
--rw-r--r--  1 runner runner  4096 Sep 25 01:29 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep 25 01:29 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep 25 01:29 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Sep 25 07:47 .
+drwxr-x--- 12 runner runner  4096 Sep 25 07:47 ..
+-rw-r--r--  1 runner runner  4096 Sep 25 07:47 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Sep 25 07:47 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Sep 25 07:47 xray-knife.db-wal
