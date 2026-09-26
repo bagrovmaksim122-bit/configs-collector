@@ -48,8 +48,8 @@ Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/25 22:19:28 Database migrations applied successfully.
-Total configs: 97
+2026/09/26 01:32:55 Database migrations applied successfully.
+Total configs: 110
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +57,20 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 22:20:33 Full test results for 97 configurations have also been saved to work/speed.csv
-🎉 22:20:33 Test run finished. Found 48 working configs (out of 97).
-🎉 22:20:33 Results have been saved to work/speed.csv
+🎉 01:33:58 Full test results for 110 configurations have also been saved to work/speed.csv
+🎉 01:33:58 Test run finished. Found 64 working configs (out of 110).
+🎉 01:33:58 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-98 work/speed.csv
+111 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c23,passed,,reality,47.253.226.114,47,200,38.30211,582.61346,US,47,3,1,1,cloudflare.com=ok(47ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c31,passed,,,156.146.38.170,122,200,149.12822,173.53458,US,122,37,1,1,cloudflare.com=ok(122ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c32,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": context deadline exceeded",,156.146.38.169,122,200,0,180.44705,US,122,36,1,1,cloudflare.com=ok(122ms)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c5,passed,,,156.146.38.169,64,200,288.16818,266.73547,US,64,16,1,1,cloudflare.com=ok(64ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo=@23.150.248.20:8388#c4,passed,,,23.150.248.20,102,200,295.16367,128.30756,US,101,16,1,1,cloudflare.com=ok(102ms)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c31,passed,,,108.181.0.177,123,200,135.86652,177.14868,US,123,36,1,1,cloudflare.com=ok(123ms)
 total 140
-drwxr-xr-x  2 runner runner  4096 Sep 25 22:19 .
-drwxr-x--- 12 runner runner  4096 Sep 25 22:19 ..
--rw-r--r--  1 runner runner  4096 Sep 25 22:19 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep 25 22:19 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep 25 22:19 xray-knife.db-wal
+drwxr-xr-x  2 runner runner  4096 Sep 26 01:32 .
+drwxr-x--- 12 runner runner  4096 Sep 26 01:32 ..
+-rw-r--r--  1 runner runner  4096 Sep 26 01:32 xray-knife.db
+-rw-r--r--  1 runner runner 32768 Sep 26 01:32 xray-knife.db-shm
+-rw-r--r--  1 runner runner 94792 Sep 26 01:32 xray-knife.db-wal
