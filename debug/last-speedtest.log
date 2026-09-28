@@ -15,7 +15,9 @@ Flags:
   -c, --config string                 The xray config link
   -z, --core string                   Core type (auto, singbox, xray) (default "auto")
       --dedup-semantic                Deduplicate by connection identity (protocol/address/port/credential/transport/TLS) instead of exact link text; drops re-skinned duplicates. Use --dedup-semantic=false for exact-string dedup only (default true)
-  -f, --file string                   Read config links from a file
+      --diagnose                      Check failed configs' servers directly (DNS, TCP, TLS ClientHello) to tell blocking (dns-poisoned, tcp-reset, tls-reset...) from a dead server or wrong config (default true)
+  -f, --file string                   Read config links from a file, one per line ("-" reads stdin). Blank lines and # comments are skipped
+      --fragment string               Split the TLS ClientHello to evade SNI filtering, as packets,length[,interval] (e.g. tlshello,100-200,10-20). "off" disables
       --from-db                       Test configs from the database
   -h, --help                          help for http
   -e, --insecure                      Insecure tls connection (fake SNI)
@@ -24,32 +26,37 @@ Flags:
       --max-passed uint16             Stop the batch test after N configs pass (0 = test all). Ideal for large lists.
   -d, --mdelay uint16                 Maximum allowed delay (ms) (default 5000)
   -m, --method string                 Http method (default "GET")
-  -o, --out string                    Output file for valid/all config links (default "valid.txt")
+      --noise stringArray             Send UDP noise before traffic (xray), as type:packet[:delay] (e.g. rand:10-20:10-16). Repeatable
+  -o, --out string                    Output file for valid/all config links ("-" writes stdout) (default "valid.txt")
       --ping                          Enable continuous HTTP ping mode for a single config
       --prescan                       TCP pre-check: drop unreachable endpoints before the full test (much faster on large lists)
       --prescan-timeout uint16        TCP dial timeout for --prescan (ms) (default 2000)
       --prescan-workers uint16        Concurrent TCP dials for --prescan (default 512)
+      --probe-samples int             Round trips to measure for natively probed protocols such as MTProto, 1-32 (0 means 1). All samples share one connection and one --timeout budget, so a slow proxy may report fewer. HTTP testing is unaffected; --ping uses one sample per tick. (default 1)
       --protocol string               Filter configs by protocol (vmess, vless, etc.) from the DB
+      --resolver string               Trusted DNS for diagnostics and --prescan, compared with the system resolver to detect poisoning: doh://host, https://host/dns-query, or IP[:port]. Cores keep their own DNS
       --retries uint16                Number of retries for failed proxy tests
       --rip                           Receive real IP (csv) (default true)
       --save-db                       Save test results to the database
       --sort                          Sort config links by their delay (fast to slow) in file output (default true)
   -S, --speedtest                     Speed test with speed.cloudflare.com
       --speedtest-timeout uint16      Measurement window for each speedtest direction (seconds). Slow links report the throughput reached within it instead of 0. (default 30)
+      --speedtest-url string          Speed test target: an https origin speaking Cloudflare's /__down and /__up, or a file URL to download (upload skipped). Default speed.cloudflare.com
+  -i, --stdin                         Read a batch of config links from standard input
       --sub-id int                    Filter configs by subscription ID from the DB
       --test-urls string              Comma-separated URLs to test each config against (overrides --check-preset and --url). generate_204 URLs require a 204 response.
   -t, --threads uint16                Number of threads (default 50)
       --timeout uint16                HTTP client timeout in ms (0 = use mdelay value)
-  -x, --type string                   Output type for file (csv, txt) (default "txt")
+  -x, --type string                   Output type for file: txt (passed links), csv, json or jsonl (all results) (default "txt")
   -u, --url string                    The url to test config (single-endpoint mode) (default "https://cloudflare.com/cdn-cgi/trace")
       --url-success-threshold float   Fraction of panel endpoints that must succeed for a 'passed' grade (e.g. 0.75). Above 0 but below it grades 'semi-passed'. (default 1)
   -v, --verbose                       Verbose
 Global Flags:
       --db string   Path to the xray-knife SQLite database (default: $XRAY_KNIFE_HOME/xray-knife.db, else ~/.xray-knife/xray-knife.db)
+      --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-2026/09/28 00:45:22 Database migrations applied successfully.
-Total configs: 146
+Total configs: 138
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -57,20 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 00:46:33 Full test results for 146 configurations have also been saved to work/speed.csv
-🎉 00:46:33 Test run finished. Found 90 working configs (out of 146).
-🎉 00:46:33 Results have been saved to work/speed.csv
+🎉 06:54:01 Full test results for 138 configurations have also been saved to work/speed.csv
+🎉 06:54:01 Test run finished. Found 81 working configs (out of 138).
+ℹ️  06:54:01 57 not passed: 40 proxy-protocol, 7 http-timeout, 5 tls-timeout, 3 config, 2 tls-reset
+🎉 06:54:01 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-147 work/speed.csv
+139 work/speed.csv
 --- заголовок и три строки ---
-link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints
-ss://YWVzLTEyOC1nY206NjJkZDc1YmE5NDQ5NDdkNGNhOTgzY2YxNjc5YjM3OTc=@173.234.25.93:15243#c14,passed,,,173.234.25.90,51,200,464.12228,320.21112,US,50,10,1,1,cloudflare.com=ok(51ms)
-ss://YWVzLTI1Ni1nY206OGMwMDliYjYtMDhiMy00NTI2LWE4NmItNWFmN2RkZmM1NjdhLTRjNzU3YjcyLTZlZWMtNGZhZi04YzJlLTA5ZmQxYzdmYTkzNg==@192.3.247.109:43579#c15,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,192.3.247.109,59,200,0,333.36505,US,59,8,1,1,cloudflare.com=ok(59ms)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c36,passed,,,156.146.38.170,90,200,193.79427,256.89676,US,90,26,1,1,cloudflare.com=ok(90ms)
-total 140
-drwxr-xr-x  2 runner runner  4096 Sep 28 00:45 .
-drwxr-x--- 12 runner runner  4096 Sep 28 00:45 ..
--rw-r--r--  1 runner runner  4096 Sep 28 00:45 xray-knife.db
--rw-r--r--  1 runner runner 32768 Sep 28 00:45 xray-knife.db-shm
--rw-r--r--  1 runner runner 94792 Sep 28 00:45 xray-knife.db-wal
+link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
+ss://YWVzLTEyOC1nY206NjJkZDc1YmE5NDQ5NDdkNGNhOTgzY2YxNjc5YjM3OTc=@173.234.25.93:15243#c16,passed,,,173.234.25.90,53,200,403.22437,103.51114,US,53,16,1,1,cloudflare.com=ok(53ms),0,0,0,0,0,LAX,off,
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c21,passed,,,108.181.0.177,92,200,572.11084,501.9001,US,92,9,1,1,cloudflare.com=ok(92ms),0,0,0,0,0,LAX,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c40,passed,,reality,2604:2dc0:200:26d8::,145,200,137.6807,25.77337,US,144,30,1,1,cloudflare.com=ok(145ms),0,0,0,0,0,SEA,off,
+каталога ~/.xray-knife нет
