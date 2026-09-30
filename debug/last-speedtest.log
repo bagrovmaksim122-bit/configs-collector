@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 126
+Total configs: 108
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 13:43:30 Full test results for 126 configurations have also been saved to work/speed.csv
-🎉 13:43:30 Test run finished. Found 62 working configs (out of 126).
-ℹ️  13:43:30 64 not passed: 32 proxy-protocol, 16 tls-timeout, 11 http-timeout, 2 config, 2 tcp-timeout, 1 tls-reset
-🎉 13:43:30 Results have been saved to work/speed.csv
+🎉 19:20:10 Full test results for 108 configurations have also been saved to work/speed.csv
+🎉 19:20:10 Test run finished. Found 59 working configs (out of 108).
+ℹ️  19:20:10 49 not passed: 19 proxy-protocol, 13 http-timeout, 11 tls-timeout, 3 config, 2 tls-reset, 1 tcp-timeout
+🎉 19:20:10 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-127 work/speed.csv
+109 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c47,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,52,200,457.34326,342.94745,US,52,12,1,1,cloudflare.com=ok(52ms),0,0,0,0,0,EWR,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#c43,passed,,,37.19.198.244,63,200,481.04495,480.67996,US,63,11,1,1,cloudflare.com=ok(63ms),0,0,0,0,0,EWR,off,
-vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#c46,passed,,reality,137.184.218.169,71,200,322.24628,341.11316,US,71,12,1,1,cloudflare.com=ok(71ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#c22,passed,,,173.244.56.6,58,200,558.1049,317.5477,US,58,11,1,1,cloudflare.com=ok(58ms),0,0,0,0,0,PHX,off,
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c23,passed,,,108.181.0.177,76,200,572.202,297.7775,US,76,14,1,1,cloudflare.com=ok(76ms),0,0,0,0,0,SJC,off,
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg@134.195.101.117:2377?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3D%28Telegram%F0%9F%87%A8%F0%9F%87%B3+%40VPNine1%29fa03bb5%3A137563#c34,passed,,,134.195.101.118,116,200,15.36154,2.908474,US,116,25,1,1,cloudflare.com=ok(116ms),0,0,0,0,0,SJC,off,
 каталога ~/.xray-knife нет
