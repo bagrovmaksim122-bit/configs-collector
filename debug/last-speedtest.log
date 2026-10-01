@@ -56,7 +56,8 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 129
+ℹ️  18:53:10 Semantic dedup removed 1 duplicate config link(s) (same connection). Testing 113 unique configs.
+Total configs: 113
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +65,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 13:13:44 Full test results for 129 configurations have also been saved to work/speed.csv
-🎉 13:13:44 Test run finished. Found 70 working configs (out of 129).
-ℹ️  13:13:44 59 not passed: 36 proxy-protocol, 18 http-timeout, 3 tls-reset, 2 tls-timeout
-🎉 13:13:44 Results have been saved to work/speed.csv
+🎉 18:54:22 Full test results for 113 configurations have also been saved to work/speed.csv
+🎉 18:54:22 Test run finished. Found 52 working configs (out of 113).
+ℹ️  18:54:22 61 not passed: 22 http-timeout, 19 proxy-protocol, 11 tls-timeout, 3 timeout, 3 tls-reset, 1 config, 1 tcp-refused, 1 tcp-timeout
+🎉 18:54:22 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-130 work/speed.csv
+114 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.104:443?encryption=none&flow=xtls-rprx-vision&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#c46,passed,,reality,185.195.57.169,129,200,39.694637,280.42728,US,129,22,1,1,cloudflare.com=ok(129ms),0,0,0,0,0,EWR,off,
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk%3D@15.235.75.71:8388#c48,passed,,,148.113.222.123,176,200,218.47783,39.93752,CA,176,24,1,1,cloudflare.com=ok(176ms),0,0,0,0,0,YYZ,off,
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c58,passed,,,108.181.0.177,214,200,109.59286,128.26332,US,214,51,1,1,cloudflare.com=ok(214ms),0,0,0,0,0,LAX,off,
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#c42,passed,,reality,137.184.218.169,53,200,13.692328,361.52844,US,53,7,1,1,cloudflare.com=ok(53ms),0,0,0,0,0,EWR,off,
+vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.104:443?encryption=none&flow=xtls-rprx-vision&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#c36,passed,,reality,185.195.57.169,157,200,1.5410341,4.865473,US,157,12,1,1,cloudflare.com=ok(157ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTEyOC1nY206MTM3N2Q1Y2ZhZmM5Mjc5YTkwNGRlYjNiZmE0ZjNkZTI=@74.201.177.54:14680#c48,passed,,,74.201.177.50,190,200,92.134026,96.7105,US,190,60,1,1,cloudflare.com=ok(190ms),0,0,0,0,0,LAX,off,
 каталога ~/.xray-knife нет
