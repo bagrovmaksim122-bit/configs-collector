@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 00:51:00 Full test results for 127 configurations have also been saved to work/speed.csv
-🎉 00:51:00 Test run finished. Found 78 working configs (out of 127).
-ℹ️  00:51:00 49 not passed: 27 proxy-protocol, 10 http-timeout, 6 tls-timeout, 4 config, 1 other, 1 tls-reset
-🎉 00:51:00 Results have been saved to work/speed.csv
+🎉 07:07:20 Full test results for 127 configurations have also been saved to work/speed.csv
+🎉 07:07:20 Test run finished. Found 80 working configs (out of 127).
+ℹ️  07:07:20 47 not passed: 23 proxy-protocol, 15 http-timeout, 5 tls-reset, 3 config, 1 tcp-timeout
+🎉 07:07:20 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
 128 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#c11,passed,,,156.146.38.167,70,200,331.85025,329.23273,US,70,17,1,1,cloudflare.com=ok(70ms),0,0,0,0,0,DFW,off,
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388?type=tcp&headerType=none#c18,passed,,,108.181.0.177,123,200,155.81477,180.47424,US,123,36,1,1,cloudflare.com=ok(123ms),0,0,0,0,0,LAX,off,
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c14,passed,,reality,2604:2dc0:200:26c3::,151,200,13.303533,10.231479,US,150,29,1,1,cloudflare.com=ok(151ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c70,passed,,reality,2604:2dc0:200:26ce::,139,200,185.6229,27.787233,US,139,29,1,1,cloudflare.com=ok(139ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c71,passed,,reality,2604:2dc0:200:26d8::,140,200,194.63277,5.100031,US,139,29,1,1,cloudflare.com=ok(140ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c69,passed,,reality,2604:2dc0:200:26c3::,141,200,59.04018,3.6747503,US,141,29,1,1,cloudflare.com=ok(141ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
