@@ -56,7 +56,8 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 183
+ℹ️  18:34:47 Semantic dedup removed 1 duplicate config link(s) (same connection). Testing 163 unique configs.
+Total configs: 163
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +65,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 13:41:47 Full test results for 183 configurations have also been saved to work/speed.csv
-🎉 13:41:47 Test run finished. Found 86 working configs (out of 183).
-ℹ️  13:41:47 97 not passed: 43 proxy-protocol, 30 http-timeout, 16 tls-timeout, 6 tls-reset, 1 config, 1 tcp-refused
-🎉 13:41:47 Results have been saved to work/speed.csv
+🎉 18:36:02 Full test results for 163 configurations have also been saved to work/speed.csv
+🎉 18:36:02 Test run finished. Found 54 working configs (out of 163).
+ℹ️  18:36:02 109 not passed: 52 proxy-protocol, 26 http-timeout, 19 tls-timeout, 5 tls-reset, 2 config, 2 refused, 2 timeout, 1 tcp-timeout
+🎉 18:36:02 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-184 work/speed.csv
+164 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#c87,passed,,reality,137.184.218.169,48,200,8.12924,348.93594,US,48,8,1,1,cloudflare.com=ok(48ms),0,0,0,0,0,EWR,off,
-vless://2fef98ad-aa5a-6727-fcc9-33714e619056@147.78.182.5:443?path=%2F&security=reality&pbk=EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ&type=xhttp&sni=download.nvidia.com&fp=edge#c89,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,45.148.233.2,62,200,0,308.1738,US,61,8,1,1,cloudflare.com=ok(62ms),0,0,0,0,0,EWR,off,
-vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.95:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yahoo.com&fp=ios&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a&packetEncoding=xudp#c90,passed,,reality,45.144.112.55,145,200,655.9155,453.47495,US,145,8,1,1,cloudflare.com=ok(145ms),0,0,0,0,0,EWR,off,
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#c70,passed,,reality,137.184.218.169,171,200,1.7415234,0.8865795,US,171,33,1,1,cloudflare.com=ok(171ms),0,0,0,0,0,EWR,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#c76,passed,,reality,2604:2dc0:200:26ce::,214,200,119.26919,136.7475,US,213,47,1,1,cloudflare.com=ok(214ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.197:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c74,passed,,reality,2604:2dc0:200:26c5::,227,200,130.4894,3.25642,US,227,50,1,1,cloudflare.com=ok(227ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
