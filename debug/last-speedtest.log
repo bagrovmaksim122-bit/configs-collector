@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 15:09:36 Full test results for 113 configurations have also been saved to work/speed.csv
-🎉 15:09:36 Test run finished. Found 50 working configs (out of 113).
-ℹ️  15:09:36 63 not passed: 33 proxy-protocol, 15 http-timeout, 9 tls-timeout, 4 tls-reset, 1 config, 1 timeout
-🎉 15:09:36 Results have been saved to work/speed.csv
+🎉 19:23:45 Full test results for 113 configurations have also been saved to work/speed.csv
+🎉 19:23:45 Test run finished. Found 50 working configs (out of 113).
+ℹ️  19:23:45 63 not passed: 39 proxy-protocol, 13 http-timeout, 6 tls-reset, 3 tls-timeout, 1 config, 1 timeout
+🎉 19:23:45 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
 114 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c39,passed,,,156.146.38.170,100,200,191.51335,30.008053,US,100,28,1,1,cloudflare.com=ok(100ms),0,0,0,0,0,DFW,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#c40,passed,,,156.146.38.167,101,200,204.70502,202.95168,US,101,28,1,1,cloudflare.com=ok(101ms),0,0,0,0,0,DFW,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c41,passed,,,156.146.38.169,101,200,204.01176,266.944,US,101,27,1,1,cloudflare.com=ok(101ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c38,passed,,,156.146.38.170,106,200,186.0944,243.92702,US,105,26,1,1,cloudflare.com=ok(106ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c40,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.169,110,200,0,244.24748,US,110,41,1,1,cloudflare.com=ok(110ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#c39,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.167,112,200,0,278.3547,US,112,40,1,1,cloudflare.com=ok(112ms),0,0,0,0,0,DFW,off,
 каталога ~/.xray-knife нет
