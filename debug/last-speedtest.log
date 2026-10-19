@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 138
+Total configs: 171
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 13:25:30 Full test results for 138 configurations have also been saved to work/speed.csv
-🎉 13:25:30 Test run finished. Found 58 working configs (out of 138).
-ℹ️  13:25:30 80 not passed: 62 proxy-protocol, 11 http-timeout, 3 tls-reset, 3 tls-timeout, 1 proxy-auth
-🎉 13:25:30 Results have been saved to work/speed.csv
+🎉 19:56:51 Full test results for 171 configurations have also been saved to work/speed.csv
+🎉 19:56:51 Test run finished. Found 78 working configs (out of 171).
+ℹ️  19:56:51 93 not passed: 63 proxy-protocol, 14 http-timeout, 11 tls-timeout, 3 tls-reset, 1 config, 1 tcp-timeout
+🎉 19:56:51 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-139 work/speed.csv
+172 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c22,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.169,61,200,0,467.33255,US,61,13,1,1,cloudflare.com=ok(61ms),0,0,0,0,0,DFW,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#c21,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.167,65,200,0,255.72224,US,65,17,1,1,cloudflare.com=ok(65ms),0,0,0,0,0,DFW,off,
-vless://911f864b-a901-4589-8139-e7e9631dadc4@104.36.71.38:443?flow=xtls-rprx-vision&pbk=Uz2xnYyvHKZfpqdnn9B12BavnRCU6Pxem36vd34ajTE&security=reality&sid=c7129d3a&sni=www.apple.com&type=tcp&fp=firefox#c62,passed,,reality,104.36.71.38,154,200,166.711,84.76103,US,153,36,1,1,cloudflare.com=ok(154ms),0,0,0,0,0,LAX,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#c72,passed,,,156.146.38.167,56,200,327.32376,276.02057,US,56,13,1,1,cloudflare.com=ok(56ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c71,passed,,,156.146.38.169,80,200,387.84607,355.59375,US,80,21,1,1,cloudflare.com=ok(80ms),0,0,0,0,0,DFW,off,
+vless://c9fd0fb1-8251-4106-b09a-f4b426736f67@137.184.218.169:36925?security=reality&encryption=none&pbk=lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=www.cloudflare.com#c75,passed,,reality,137.184.218.169,153,200,1.1449817,3.5203676,US,153,31,1,1,cloudflare.com=ok(153ms),0,0,0,0,0,EWR,off,
 каталога ~/.xray-knife нет
