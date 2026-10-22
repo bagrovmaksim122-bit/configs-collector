@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 95
+Total configs: 165
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 01:32:07 Full test results for 95 configurations have also been saved to work/speed.csv
-🎉 01:32:07 Test run finished. Found 55 working configs (out of 95).
-ℹ️  01:32:07 40 not passed: 28 proxy-protocol, 5 http-timeout, 5 tls-timeout, 1 config, 1 tls-reset
-🎉 01:32:07 Results have been saved to work/speed.csv
+🎉 07:35:19 Full test results for 165 configurations have also been saved to work/speed.csv
+🎉 07:35:19 Test run finished. Found 99 working configs (out of 165).
+ℹ️  07:35:19 66 not passed: 36 proxy-protocol, 17 http-timeout, 8 tls-timeout, 4 tls-reset, 1 config
+🎉 07:35:19 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-96 work/speed.csv
+166 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://b67422ff-101b-433b-8f66-4ab282960b36@172.245.253.16:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=www.apple.com&fp=chrome&pbk=Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8&sid=e7dc2c820ba8bbd4&type=tcp&headerType=none&path=/#c27,passed,,reality,172.245.253.16,58,200,249.2696,176.35081,US,58,2,1,1,cloudflare.com=ok(58ms),0,0,0,0,0,ORD,off,
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c35,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,95,200,53.293293,317.9216,US,95,23,1,1,cloudflare.com=ok(95ms),0,0,0,0,0,EWR,off,
-vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c34,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,47.253.226.114,114,200,0,9.14608,US,114,19,1,1,cloudflare.com=ok(114ms),0,0,0,0,0,IAD,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#c58,passed,,,37.19.198.243,29,200,1072.2635,236.83261,US,29,7,1,1,cloudflare.com=ok(29ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#c60,passed,,,37.19.198.244,30,200,1065.0206,726.7813,US,30,6,1,1,cloudflare.com=ok(30ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#c59,passed,,,37.19.198.160,31,200,1145.5643,102.06612,US,31,6,1,1,cloudflare.com=ok(31ms),0,0,0,0,0,EWR,off,
 каталога ~/.xray-knife нет
