@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 110
+Total configs: 105
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 10:59:15 Full test results for 110 configurations have also been saved to work/speed.csv
-🎉 10:59:15 Test run finished. Found 53 working configs (out of 110).
-ℹ️  10:59:15 57 not passed: 33 proxy-protocol, 12 http-timeout, 6 tls-reset, 5 tls-timeout, 1 timeout
-🎉 10:59:15 Results have been saved to work/speed.csv
+🎉 14:32:47 Full test results for 105 configurations have also been saved to work/speed.csv
+🎉 14:32:47 Test run finished. Found 51 working configs (out of 105).
+ℹ️  14:32:47 54 not passed: 34 proxy-protocol, 15 http-timeout, 3 tls-reset, 1 timeout, 1 tls-timeout
+🎉 14:32:47 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-111 work/speed.csv
+106 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@188.114.98.0:443?encryption=none&security=tls&type=ws&host=snip.edgeoneai.cc.cd&path=/?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM?ed=2048&sni=snip.edgeoneai.cc.cd&alpn=http/1.1&fp=unsafe&cs=TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&fm={#c25,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,104.28.152.154,99,200,0,196.82173,US,99,9,1,1,cloudflare.com=ok(99ms),0,0,0,0,0,LAX,off,
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c47,passed,,reality,2604:2dc0:200:26c3::,147,200,76.564896,35.1923,US,146,31,1,1,cloudflare.com=ok(147ms),0,0,0,0,0,SEA,off,
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.197:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c45,passed,,reality,2604:2dc0:200:26c5::,150,200,202.8393,7.4358044,US,149,33,1,1,cloudflare.com=ok(150ms),0,0,0,0,0,SEA,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#c38,passed,,,37.19.198.244,51,200,817.4593,637.0782,US,51,7,1,1,cloudflare.com=ok(51ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.176.204.18:19999#c68,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,185.176.204.142,275,200,0,33.24735,DE,275,88,1,1,cloudflare.com=ok(275ms),0,0,0,0,0,FRA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c45,passed,,reality,2604:2dc0:200:26c3::,279,200,128.99219,4.0767045,US,278,62,1,1,cloudflare.com=ok(279ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
