@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 96
+Total configs: 91
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 20:49:09 Full test results for 96 configurations have also been saved to work/speed.csv
-🎉 20:49:09 Test run finished. Found 52 working configs (out of 96).
-ℹ️  20:49:09 44 not passed: 27 proxy-protocol, 10 http-timeout, 4 tls-cert, 2 tls-reset, 1 timeout
-🎉 20:49:09 Results have been saved to work/speed.csv
+🎉 23:13:50 Full test results for 91 configurations have also been saved to work/speed.csv
+🎉 23:13:50 Test run finished. Found 59 working configs (out of 91).
+ℹ️  23:13:50 32 not passed: 20 proxy-protocol, 6 http-timeout, 4 tls-cert, 1 config, 1 tls-reset
+🎉 23:13:50 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-97 work/speed.csv
+92 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#c31,passed,,,37.19.198.244,109,200,237.98338,227.19112,US,109,27,1,1,cloudflare.com=ok(109ms),0,0,0,0,0,EWR,off,
-vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c30,passed,speedtest_download_failed: read body after 47092 bytes: unexpected EOF,reality,47.253.226.114,193,200,0,103.93792,US,193,39,1,1,cloudflare.com=ok(193ms),0,0,0,0,0,IAD,off,
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.214:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c40,passed,,reality,2604:2dc0:200:26d6::,225,200,172.38171,3.0340762,US,224,50,1,1,cloudflare.com=ok(225ms),0,0,0,0,0,SEA,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#c28,passed,,,37.19.198.236,115,200,279.5068,191.9271,US,115,33,1,1,cloudflare.com=ok(115ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#c27,passed,,,37.19.198.243,117,200,293.06747,130.29477,US,117,37,1,1,cloudflare.com=ok(117ms),0,0,0,0,0,EWR,off,
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c34,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,119,200,9.849627,2.1035333,US,119,36,1,1,cloudflare.com=ok(119ms),0,0,0,0,0,EWR,off,
 каталога ~/.xray-knife нет
