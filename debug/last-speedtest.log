@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 77
+Total configs: 93
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 06:12:55 Full test results for 77 configurations have also been saved to work/speed.csv
-🎉 06:12:55 Test run finished. Found 42 working configs (out of 77).
-ℹ️  06:12:55 35 not passed: 26 proxy-protocol, 3 http-timeout, 3 tls-reset, 3 tls-timeout
-🎉 06:12:55 Results have been saved to work/speed.csv
+🎉 13:01:46 Full test results for 93 configurations have also been saved to work/speed.csv
+🎉 13:01:46 Test run finished. Found 51 working configs (out of 93).
+ℹ️  13:01:46 42 not passed: 23 proxy-protocol, 13 http-timeout, 3 tls-timeout, 2 tls-reset, 1 config
+🎉 13:01:46 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-78 work/speed.csv
+94 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@45.86.51.18:19999#c28,passed,,,45.86.51.142,135,200,248.4003,59.232834,US,135,44,1,1,cloudflare.com=ok(135ms),0,0,0,0,0,IAD,off,
-ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@95.215.201.18:19999#c27,passed,,,95.215.201.142,139,200,308.2591,96.22557,US,139,32,1,1,cloudflare.com=ok(139ms),0,0,0,0,0,LAX,off,
-vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c30,passed,speedtest_download_failed: read body after 2313902 bytes: unexpected EOF,reality,47.253.226.114,177,200,0,53.254402,US,177,41,1,1,cloudflare.com=ok(177ms),0,0,0,0,0,IAD,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@95.215.201.18:19999#c41,passed,,,95.215.201.142,177,200,180.81065,114.54607,US,177,42,1,1,cloudflare.com=ok(177ms),0,0,0,0,0,LAX,off,
+trojan://f0eb8c92ce8946aaba856569cff1a16b@216.106.186.33:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.findlocaljobnetworkandbuildcommunityconnections.com#c43,passed,,tls,216.106.186.32,203,200,166.23952,41.945347,US,203,45,1,1,cloudflare.com=ok(203ms),0,0,0,0,0,SEA,off,
+trojan://dba20dcb635e430fa4d3bfc303a149d2@216.106.186.32:443?security=tls&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com&type=tcp&headerType=none#c42,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,216.106.186.155,203,200,0,8.812578,US,203,46,1,1,cloudflare.com=ok(203ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
