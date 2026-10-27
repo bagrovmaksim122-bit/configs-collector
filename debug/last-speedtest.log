@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 91
+Total configs: 116
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 05:03:32 Full test results for 91 configurations have also been saved to work/speed.csv
-🎉 05:03:32 Test run finished. Found 54 working configs (out of 91).
-ℹ️  05:03:32 37 not passed: 22 proxy-protocol, 6 tls-timeout, 5 http-timeout, 3 tls-reset, 1 config
-🎉 05:03:32 Results have been saved to work/speed.csv
+🎉 10:34:02 Full test results for 116 configurations have also been saved to work/speed.csv
+🎉 10:34:02 Test run finished. Found 70 working configs (out of 116).
+ℹ️  10:34:02 46 not passed: 30 proxy-protocol, 8 http-timeout, 4 tls-timeout, 3 tls-reset, 1 config
+🎉 10:34:02 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-92 work/speed.csv
+117 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c41,passed,,reality,47.253.226.114,55,200,72.6162,61.052773,US,55,7,1,1,cloudflare.com=ok(55ms),0,0,0,0,0,IAD,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#c45,passed,,,156.146.38.168,118,200,215.8404,191.53476,US,118,35,1,1,cloudflare.com=ok(118ms),0,0,0,0,0,DFW,off,
-ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@51.79.49.116:8882#c44,passed,,,51.79.49.116,136,200,49.73944,61.113155,CA,136,23,1,1,cloudflare.com=ok(136ms),0,0,0,0,0,YYZ,off,
+trojan://dba20dcb635e430fa4d3bfc303a149d2@216.106.186.32:443?security=tls&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com&type=tcp&headerType=none#c54,passed,,tls,216.106.186.155,139,200,282.90668,56.150024,US,139,31,1,1,cloudflare.com=ok(139ms),0,0,0,0,0,SEA,off,
+vless://45ceaca9-30f4-4035-85b7-8f83493911d8@188.164.248.91:443?host=tamoai.ccwu.cc&path=%2Fproxyip%3D163.192.47.40%2C47.57.181.17%2C34.83.245.149%2C4.155.83.212%2C64.227.62.172%2C24.144.68.139%2C161.35.232.123%2C107.170.248.68&security=tls&sni=tamoai.ccwu.cc&type=ws&fp=firefox#c34,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": io: read/write on closed pipe; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": io: read/write on closed pipe",tls,2604:a880:2:d1:0:1:26b8:b001,140,200,0,0,US,140,18,1,1,cloudflare.com=ok(140ms),0,0,0,0,0,SJC,off,
+vless://45ceaca9-30f4-4035-85b7-8f83493911d8@188.164.248.246:443?host=tamoai.ccwu.cc&path=%2Fproxyip%3D163.192.47.40%2C47.57.181.17%2C34.83.245.149%2C4.155.83.212%2C64.227.62.172%2C24.144.68.139%2C161.35.232.123%2C107.170.248.68&security=tls&sni=tamoai.ccwu.cc&type=ws&fp=ios#c33,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": io: read/write on closed pipe; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": io: read/write on closed pipe",tls,2604:a880:4:1d0:0:1:3896:4000,141,200,0,0,US,141,9,1,1,cloudflare.com=ok(141ms),0,0,0,0,0,SJC,off,
 каталога ~/.xray-knife нет
