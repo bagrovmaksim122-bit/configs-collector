@@ -56,8 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-ℹ️  02:21:36 Semantic dedup removed 1 duplicate config link(s) (same connection). Testing 101 unique configs.
-Total configs: 101
+Total configs: 102
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -65,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 02:22:20 Full test results for 101 configurations have also been saved to work/speed.csv
-🎉 02:22:20 Test run finished. Found 62 working configs (out of 101).
-ℹ️  02:22:20 39 not passed: 19 proxy-protocol, 10 http-timeout, 4 config, 4 tls-reset, 2 proxy-auth
-🎉 02:22:20 Results have been saved to work/speed.csv
+🎉 09:38:43 Full test results for 102 configurations have also been saved to work/speed.csv
+🎉 09:38:43 Test run finished. Found 50 working configs (out of 102).
+ℹ️  09:38:43 52 not passed: 31 proxy-protocol, 9 http-timeout, 7 tls-timeout, 2 config, 2 tls-reset, 1 tcp-timeout
+🎉 09:38:43 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-102 work/speed.csv
+103 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#c30,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,2604:2dc0:200:26ce::,76,200,0,43.05427,US,76,8,1,1,cloudflare.com=ok(76ms),0,0,0,0,0,SEA,off,
-ss://YWVzLTI1Ni1nY206Z2oxK1hLdWxLVjBubXc2SVRoY2tPa2tKaDVEU003K0M=@45.207.207.25:443#c41,passed,,,45.207.207.25,111,200,21.153788,19.148155,US,111,30,1,1,cloudflare.com=ok(111ms),0,0,0,0,0,LAX,off,
-hysteria2://92bf29cc-ee08-4c97-bf0b-b4dff41e5bd8@179.255.103.55:443?sni=n02.jinggai.online#c101,passed,,tls,179.255.103.55,141,200,286.40723,208.56406,US,141,107,1,1,cloudflare.com=ok(141ms),0,0,0,0,0,LAX,off,
+vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c45,passed,speedtest_download_failed: read body after 1003200 bytes: unexpected EOF,reality,47.253.226.114,131,200,0,90.77142,US,131,27,1,1,cloudflare.com=ok(131ms),0,0,0,0,0,IAD,off,
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.156.49:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com#c46,passed,,tls,216.152.156.242,137,200,279.92535,11.821049,US,137,31,1,1,cloudflare.com=ok(137ms),0,0,0,0,0,ATL,off,
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c50,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,147,200,1.9664941,1.7342691,US,147,45,1,1,cloudflare.com=ok(147ms),0,0,0,0,0,EWR,off,
 каталога ~/.xray-knife нет
