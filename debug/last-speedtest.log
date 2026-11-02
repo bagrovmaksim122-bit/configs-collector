@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 119
+Total configs: 153
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 02:31:10 Full test results for 119 configurations have also been saved to work/speed.csv
-🎉 02:31:10 Test run finished. Found 66 working configs (out of 119).
-ℹ️  02:31:10 53 not passed: 40 proxy-protocol, 7 http-timeout, 3 tls-reset, 2 config, 1 proxy-auth
-🎉 02:31:10 Results have been saved to work/speed.csv
+🎉 11:04:43 Full test results for 153 configurations have also been saved to work/speed.csv
+🎉 11:04:43 Test run finished. Found 83 working configs (out of 153).
+ℹ️  11:04:43 70 not passed: 43 proxy-protocol, 13 http-timeout, 6 tls-timeout, 5 config, 2 tls-reset, 1 proxy-auth
+🎉 11:04:43 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-120 work/speed.csv
+154 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@170.101.101.112:443?security=tls&sni=resources.explorecreativejobsandenhanceyourcareerportfolio.com&type=tcp&headerType=none#c42,passed,,tls,170.101.101.67,116,200,365.27786,152.46648,US,116,29,1,1,cloudflare.com=ok(116ms),0,0,0,0,0,DTW,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@169.197.140.214:443?security=tls&sni=courses.discoverfreshgraduatejobsstartyourprofessionaljourney.com&type=tcp&headerType=none#c40,passed,,tls,169.197.140.224,123,200,322.83322,7.3291755,US,123,27,1,1,cloudflare.com=ok(123ms),0,0,0,0,0,MIA,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@169.197.140.218:443?security=tls&sni=learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com&type=tcp&headerType=none#c41,passed,,tls,169.197.140.224,126,200,265.67322,78.0159,US,126,27,1,1,cloudflare.com=ok(126ms),0,0,0,0,0,MIA,off,
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.88.61.85:443?security=tls&sni=resources.browseseniorrolesandenhanceyourcareertoday.com&type=tcp&headerType=none#c21,passed,,tls,167.88.61.85,73,200,666.35925,482.70187,US,73,1,1,1,cloudflare.com=ok(73ms),0,0,0,0,0,LAX,off,
+vless://18805ff3-b420-45de-af18-93be14024ae8@47.251.25.74:443?flow=xtls-rprx-vision&security=reality&encryption=none&sni=www.amazon.com&fp=firefox&pbk=H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8&type=tcp&path=/#c45,passed,,reality,47.251.25.74,79,200,13.715993,19.875309,US,79,4,1,1,cloudflare.com=ok(79ms),0,0,0,0,0,SJC,off,
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.88.61.198:443?security=tls&sni=cdn.browseseniorrolesandenhanceyourcareertoday.com&type=tcp&headerType=none#c47,passed,,tls,167.88.61.85,87,200,451.83817,457.7309,US,87,2,1,1,cloudflare.com=ok(87ms),0,0,0,0,0,LAX,off,
 каталога ~/.xray-knife нет
