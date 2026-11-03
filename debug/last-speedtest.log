@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 184
+Total configs: 130
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 02:55:31 Full test results for 184 configurations have also been saved to work/speed.csv
-🎉 02:55:31 Test run finished. Found 87 working configs (out of 184).
-ℹ️  02:55:31 97 not passed: 70 proxy-protocol, 15 http-timeout, 7 tls-timeout, 3 config, 2 tls-reset
-🎉 02:55:31 Results have been saved to work/speed.csv
+🎉 10:51:34 Full test results for 130 configurations have also been saved to work/speed.csv
+🎉 10:51:34 Test run finished. Found 48 working configs (out of 130).
+ℹ️  10:51:34 82 not passed: 37 tls-timeout, 32 proxy-protocol, 6 http-timeout, 5 tls-reset, 1 config, 1 proxy-auth
+🎉 10:51:34 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-185 work/speed.csv
+131 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.79:443?security=tls&sni=blog.connectingpeoplewithgreatjobs.com&type=tcp&headerType=none#c54,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,216.152.147.89,95,200,0,54.774567,CA,95,20,1,1,cloudflare.com=ok(95ms),0,0,0,0,0,YYZ,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.93:443?security=tls&sni=connectingpeoplewithgreatjobs.com&type=tcp&headerType=none#c58,passed,,tls,216.152.147.48,105,200,257.72748,105.51992,CA,105,22,1,1,cloudflare.com=ok(105ms),0,0,0,0,0,YYZ,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.89:443?security=tls&sni=www.connectingpeoplewithgreatjobs.com&type=tcp&headerType=none#c49,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,216.152.147.93,108,200,0,39.972645,CA,108,19,1,1,cloudflare.com=ok(108ms),0,0,0,0,0,YYZ,off,
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.88.61.175:443?security=tls&sni=blog.browseseniorrolesandenhanceyourcareertoday.com&type=tcp&headerType=none#c52,passed,,tls,167.88.61.198,44,200,646.1108,183.66751,US,44,1,1,1,cloudflare.com=ok(44ms),0,0,0,0,0,LAX,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576?security=reality&encryption=none&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&host=Telegram-Leviko_v2ray&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=fuck.rkn&sid=01#c60,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,2604:2dc0:200:26ce::,83,200,0,5.0764284,US,82,14,1,1,cloudflare.com=ok(83ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.216:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c62,passed,,reality,2604:2dc0:200:26d8::,87,200,96.382614,102.60026,US,86,15,1,1,cloudflare.com=ok(87ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
