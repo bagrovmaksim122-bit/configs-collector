@@ -1,164 +1,116 @@
 {
- "count": 20,
+ "count": 14,
  "servers": [
   {
+   "name": "Нидерланды 1",
+   "host": "201.34.142.108",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 121,
+   "mbps": 70.0
+  },
+  {
+   "name": "Германия 1",
+   "host": "193.160.208.240",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 124,
+   "mbps": 66.9
+  },
+  {
    "name": "Польша 1",
-   "host": "84.23.52.120",
-   "port": 28453,
-   "protocol": "vless",
-   "latency_ms": 164,
-   "mbps": 51.3
-  },
-  {
-   "name": "Польша 2",
-   "host": "84.23.52.120",
-   "port": 28448,
-   "protocol": "vless",
-   "latency_ms": 161,
-   "mbps": 50.5
-  },
-  {
-   "name": "Польша 3",
-   "host": "84.23.52.120",
-   "port": 28452,
-   "protocol": "vless",
-   "latency_ms": 165,
-   "mbps": 48.4
-  },
-  {
-   "name": "Польша 4",
-   "host": "84.23.52.120",
-   "port": 28447,
-   "protocol": "vless",
-   "latency_ms": 165,
-   "mbps": 17.7
-  },
-  {
-   "name": "Польша 5",
-   "host": "84.23.52.120",
-   "port": 28449,
-   "protocol": "vless",
-   "latency_ms": 159,
-   "mbps": 17.4
-  },
-  {
-   "name": "Польша 6",
    "host": "185.178.208.140",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 114,
+   "latency_ms": 83,
    "mbps": 0.0
   },
   {
    "name": "Россия 1",
-   "host": "46.8.158.64",
-   "port": 31068,
+   "host": "83.222.13.131",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 154,
+   "latency_ms": 118,
    "mbps": 0.0
   },
   {
    "name": "Россия 2",
-   "host": "46.8.158.68",
-   "port": 31063,
+   "host": "213.176.19.216",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 154,
+   "latency_ms": 120,
    "mbps": 0.0
   },
   {
    "name": "Россия 3",
-   "host": "46.8.158.56",
-   "port": 34004,
+   "host": "185.229.9.135",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 155,
+   "latency_ms": 123,
    "mbps": 0.0
   },
   {
    "name": "Россия 4",
-   "host": "46.8.158.53",
-   "port": 34006,
+   "host": "185.86.145.37",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 155,
+   "latency_ms": 125,
    "mbps": 0.0
   },
   {
    "name": "Россия 5",
-   "host": "46.8.158.53",
-   "port": 34001,
-   "protocol": "vless",
-   "latency_ms": 156,
+   "host": "153.76.161.159",
+   "port": 443,
+   "protocol": "trojan",
+   "latency_ms": 128,
    "mbps": 0.0
   },
   {
    "name": "Россия 6",
-   "host": "46.8.158.68",
-   "port": 31057,
+   "host": "77.221.151.106",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 157,
+   "latency_ms": 129,
    "mbps": 0.0
   },
   {
    "name": "Россия 7",
-   "host": "46.8.158.64",
-   "port": 31050,
+   "host": "157.22.197.56",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 158,
+   "latency_ms": 130,
    "mbps": 0.0
   },
   {
    "name": "Россия 8",
-   "host": "46.8.158.53",
-   "port": 34003,
+   "host": "147.45.110.236",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 159,
+   "latency_ms": 147,
    "mbps": 0.0
   },
   {
    "name": "Россия 9",
-   "host": "46.8.158.218",
-   "port": 31004,
+   "host": "5.129.202.74",
+   "port": 443,
    "protocol": "vless",
-   "latency_ms": 159,
+   "latency_ms": 187,
    "mbps": 0.0
   },
   {
    "name": "Россия 10",
-   "host": "46.8.158.73",
-   "port": 34008,
-   "protocol": "vless",
-   "latency_ms": 159,
+   "host": "84.38.184.87",
+   "port": 36116,
+   "protocol": "hysteria2",
+   "latency_ms": 9999,
    "mbps": 0.0
   },
   {
    "name": "Россия 11",
-   "host": "46.8.158.68",
-   "port": 31045,
-   "protocol": "vless",
-   "latency_ms": 159,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 12",
-   "host": "46.8.158.68",
-   "port": 31037,
-   "protocol": "vless",
-   "latency_ms": 160,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 13",
-   "host": "46.8.158.219",
-   "port": 31015,
-   "protocol": "vless",
-   "latency_ms": 160,
-   "mbps": 0.0
-  },
-  {
-   "name": "Россия 14",
-   "host": "46.8.158.73",
-   "port": 34007,
-   "protocol": "vless",
-   "latency_ms": 160,
+   "host": "84.38.184.87",
+   "port": 36118,
+   "protocol": "hysteria2",
+   "latency_ms": 9999,
    "mbps": 0.0
   }
  ]
