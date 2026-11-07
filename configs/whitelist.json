@@ -1,12 +1,36 @@
 {
- "count": 1,
+ "count": 4,
  "servers": [
   {
-   "name": "Румыния 1",
+   "name": "Польша 1",
    "host": "185.178.208.140",
    "port": 443,
    "protocol": "vless",
-   "latency_ms": 88,
+   "latency_ms": 130,
+   "mbps": 40.2
+  },
+  {
+   "name": "Россия 1",
+   "host": "185.178.208.167",
+   "port": 443,
+   "protocol": "vless",
+   "latency_ms": 129,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 2",
+   "host": "45.143.94.91",
+   "port": 8443,
+   "protocol": "vless",
+   "latency_ms": 164,
+   "mbps": 0.0
+  },
+  {
+   "name": "Россия 3",
+   "host": "168.113.128.70",
+   "port": 20105,
+   "protocol": "vless",
+   "latency_ms": 180,
    "mbps": 0.0
   }
  ]
