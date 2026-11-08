@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 112
+Total configs: 106
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 17:04:07 Full test results for 112 configurations have also been saved to work/speed.csv
-🎉 17:04:07 Test run finished. Found 36 working configs (out of 112).
-ℹ️  17:04:07 76 not passed: 53 proxy-protocol, 14 http-timeout, 4 tls-timeout, 3 tls-reset, 2 config
-🎉 17:04:07 Results have been saved to work/speed.csv
+🎉 21:11:03 Full test results for 106 configurations have also been saved to work/speed.csv
+🎉 21:11:03 Test run finished. Found 40 working configs (out of 106).
+ℹ️  21:11:03 66 not passed: 47 proxy-protocol, 9 http-timeout, 4 tls-timeout, 3 tls-reset, 2 config, 1 timeout
+🎉 21:11:03 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-113 work/speed.csv
+107 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#c64,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.168,88,200,0,250.54733,US,88,26,1,1,cloudflare.com=ok(88ms),0,0,0,0,0,DFW,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.88.61.175:443?security=tls&sni=blog.browseseniorrolesandenhanceyourcareertoday.com&type=tcp&headerType=none#c61,passed,,tls,167.88.61.85,109,200,470.16583,115.30789,US,109,17,1,1,cloudflare.com=ok(109ms),0,0,0,0,0,LAX,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.88.61.20:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=api.browseseniorrolesandenhanceyourcareertoday.com#c62,passed,,tls,167.88.61.159,116,200,496.05402,133.981,US,116,17,1,1,cloudflare.com=ok(116ms),0,0,0,0,0,LAX,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.206:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c56,passed,,reality,2604:2dc0:200:26ce::,52,200,56.062042,53.783463,US,51,8,1,1,cloudflare.com=ok(52ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c55,passed,,reality,2604:2dc0:200:26c3::,58,200,25.595045,67.081276,US,58,8,1,1,cloudflare.com=ok(58ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c54,passed,,reality,2604:2dc0:200:26db::,68,200,52.171425,4.926607,US,67,8,1,1,cloudflare.com=ok(68ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
