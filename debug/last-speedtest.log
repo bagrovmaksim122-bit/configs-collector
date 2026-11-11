@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 124
+Total configs: 143
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 06:17:32 Full test results for 124 configurations have also been saved to work/speed.csv
-🎉 06:17:32 Test run finished. Found 60 working configs (out of 124).
-ℹ️  06:17:32 64 not passed: 35 proxy-protocol, 20 http-timeout, 5 tls-timeout, 2 config, 1 tcp-timeout, 1 tls-reset
-🎉 06:17:32 Results have been saved to work/speed.csv
+🎉 14:30:24 Full test results for 143 configurations have also been saved to work/speed.csv
+🎉 14:30:24 Test run finished. Found 70 working configs (out of 143).
+ℹ️  14:30:24 73 not passed: 40 proxy-protocol, 18 http-timeout, 6 config, 5 tls-timeout, 4 tls-reset
+🎉 14:30:24 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-125 work/speed.csv
+144 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.26:443?security=tls&sni=blog.searchnationwidecareerchangehelperandguidancetoday.com&type=tcp&headerType=none#c51,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,66.163.122.25,26,200,0,155.19931,US,25,1,1,1,cloudflare.com=ok(26ms),0,0,0,0,0,IAD,off,
-vless://00144519-7e0d-476b-8d28-435576af9262@167.17.69.171:443?encryption=none&flow=xtls-rprx-vision&pbk=ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk&security=reality&sid=0990d22f&sni=www.cloudflare.com&type=raw#c76,passed,,reality,167.17.69.171,72,200,247.95877,132.56761,US,72,7,1,1,cloudflare.com=ok(72ms),0,0,0,0,0,IAD,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@170.101.101.67:443?security=tls&sni=courses.explorecreativejobsandenhanceyourcareerportfolio.com&type=tcp&headerType=none#c78,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,170.101.101.67,98,200,0,130.50049,US,97,21,1,1,cloudflare.com=ok(98ms),0,0,0,0,0,DTW,off,
+vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c68,passed,speedtest_download_failed: read body after 7884399 bytes: unexpected EOF,reality,47.253.226.114,34,200,0,489.54327,US,34,2,1,1,cloudflare.com=ok(34ms),0,0,0,0,0,IAD,off,
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.26:443?security=tls&sni=blog.searchnationwidecareerchangehelperandguidancetoday.com&type=tcp&headerType=none#c44,passed,,tls,66.163.122.46,77,200,275.92383,4.5734987,US,76,1,1,1,cloudflare.com=ok(77ms),0,0,0,0,0,IAD,off,
+vless://00144519-7e0d-476b-8d28-435576af9262@167.17.69.171:443?encryption=none&flow=xtls-rprx-vision&pbk=ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk&security=reality&sid=0990d22f&sni=www.cloudflare.com&type=raw#c73,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,167.17.69.171,87,200,0,102.48329,US,87,6,1,1,cloudflare.com=ok(87ms),0,0,0,0,0,IAD,off,
 каталога ~/.xray-knife нет
