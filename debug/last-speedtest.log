@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 105
+Total configs: 107
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 11:06:13 Full test results for 105 configurations have also been saved to work/speed.csv
-🎉 11:06:13 Test run finished. Found 55 working configs (out of 105).
-ℹ️  11:06:13 50 not passed: 30 proxy-protocol, 15 http-timeout, 3 config, 2 tls-reset
-🎉 11:06:13 Results have been saved to work/speed.csv
+🎉 18:55:40 Full test results for 107 configurations have also been saved to work/speed.csv
+🎉 18:55:40 Test run finished. Found 52 working configs (out of 107).
+ℹ️  18:55:40 55 not passed: 24 proxy-protocol, 16 http-timeout, 7 config, 6 tls-timeout, 2 tls-reset
+🎉 18:55:40 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-106 work/speed.csv
+108 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@172.64.155.33:443?security=tls&sni=fs.qicai99.com&type=ws&host=fs.qicai99.com&path=%2F&allowInsecure=0#c53,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": EOF; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": EOF",tls,104.28.160.7,81,200,0,0,US,81,10,1,1,cloudflare.com=ok(81ms),0,0,0,0,0,LAX,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c55,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,156.146.38.170,88,200,0,244.8184,US,88,26,1,1,cloudflare.com=ok(88ms),0,0,0,0,0,DFW,off,
-vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@162.159.198.1:443?&security=tls&fp=chrome&sni=fs.qicai99.com&type=ws&headerType=none&host=fs.qicai99.com&path=%2Ffp%3Dchrome#c50,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": EOF; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": EOF",tls,104.28.165.56,132,200,0,0,US,132,13,1,1,cloudflare.com=ok(132ms),0,0,0,0,0,LAX,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.197:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c46,passed,,reality,2604:2dc0:200:26c5::,90,200,29.203388,63.9422,US,89,8,1,1,cloudflare.com=ok(90ms),0,0,0,0,0,SEA,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c50,passed,,reality,2604:2dc0:200:26c3::,91,200,27.882671,328.08548,US,88,8,1,1,cloudflare.com=ok(91ms),0,0,0,0,0,SEA,off,
+vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@104.18.37.228:443?path=%2F&security=tls&encryption=none&host=fs.qicai99.com&type=ws&sni=fs.qicai99.com&allowInsecure=0&insecure=0&fp=qq#c47,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": EOF; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": EOF",tls,104.28.164.218,141,200,0,0,US,141,6,1,1,cloudflare.com=ok(141ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
