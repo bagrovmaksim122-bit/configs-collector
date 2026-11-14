@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 137
+Total configs: 95
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 10:27:36 Full test results for 137 configurations have also been saved to work/speed.csv
-🎉 10:27:36 Test run finished. Found 63 working configs (out of 137).
-ℹ️  10:27:36 74 not passed: 42 proxy-protocol, 12 http-timeout, 10 tls-timeout, 5 tls-reset, 4 tcp-timeout, 1 config
-🎉 10:27:36 Results have been saved to work/speed.csv
+🎉 17:07:24 Full test results for 95 configurations have also been saved to work/speed.csv
+🎉 17:07:24 Test run finished. Found 47 working configs (out of 95).
+ℹ️  17:07:24 48 not passed: 24 proxy-protocol, 9 http-timeout, 8 tls-timeout, 5 tls-reset, 1 config, 1 tcp-timeout
+🎉 17:07:24 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-138 work/speed.csv
+96 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@172.64.152.33:443?&security=tls&fp=chrome&sni=fs.qicai99.com&type=ws&headerType=none&host=fs.qicai99.com&path=%2Ffp%3Dchrome#c58,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": EOF; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": EOF",tls,104.28.165.53,120,200,0,0,US,120,8,1,1,cloudflare.com=ok(120ms),0,0,0,0,0,LAX,off,
-vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@172.67.74.177:443?&security=tls&fp=chrome&sni=fs.qicai99.com&type=ws&headerType=none&host=fs.qicai99.com&path=%2Ffp%3Dchrome#c63,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": EOF; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": EOF",tls,104.28.152.152,122,200,0,0,US,122,8,1,1,cloudflare.com=ok(122ms),0,0,0,0,0,LAX,off,
-vless://99c5b713-dedf-4a10-8070-916ff3f49b0e@104.18.34.33:443?path=%2F%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&security=tls&encryption=none&insecure=0&host=fs.qicai99.com&type=ws&allowInsecure=0&sni=fs.qicai99.com#c56,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": EOF; speedtest_upload_failed: Post ""https://speed.cloudflare.com/__up"": EOF",tls,104.28.153.111,128,200,0,0,US,128,10,1,1,cloudflare.com=ok(128ms),0,0,0,0,0,LAX,off,
+vless://055a1ce8-2a16-4a0d-a2c2-22826c9b2413@47.253.226.114:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc&security=reality&sni=www.cloudflare.com&type=tcp#c32,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,47.253.226.114,52,200,0,13.509839,US,52,3,1,1,cloudflare.com=ok(52ms),0,0,0,0,0,IAD,off,
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@15.204.247.124:2375#c30,passed,,,15.204.247.124,92,200,6.1737213,8.788902,US,92,4,1,1,cloudflare.com=ok(92ms),0,0,0,0,0,IAD,off,
+ss://YWVzLTI1Ni1nY206ekROVmVkUkZQUWV4Rzl2@51.222.12.127:445?type=tcp&headerType=none#c45,passed,,,51.222.12.127,147,200,60.264824,68.12228,CA,147,19,1,1,cloudflare.com=ok(147ms),0,0,0,0,0,YYZ,off,
 каталога ~/.xray-knife нет
