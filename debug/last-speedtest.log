@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 113
+Total configs: 131
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 03:26:28 Full test results for 113 configurations have also been saved to work/speed.csv
-🎉 03:26:28 Test run finished. Found 71 working configs (out of 113).
-ℹ️  03:26:28 42 not passed: 27 proxy-protocol, 11 http-timeout, 2 tls-timeout, 1 config, 1 tls-reset
-🎉 03:26:28 Results have been saved to work/speed.csv
+🎉 13:04:32 Full test results for 131 configurations have also been saved to work/speed.csv
+🎉 13:04:32 Test run finished. Found 79 working configs (out of 131).
+ℹ️  13:04:32 52 not passed: 34 proxy-protocol, 9 http-timeout, 5 tls-reset, 3 tls-timeout, 1 config
+🎉 13:04:32 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-114 work/speed.csv
+132 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.25:443?security=tls&sni=cdn.searchnationwidecareerchangehelperandguidancetoday.com&type=tcp&headerType=none#c12,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,tls,66.163.122.81,53,200,0,111.39456,US,53,12,1,1,cloudflare.com=ok(53ms),0,0,0,0,0,IAD,off,
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.30:443?security=tls&sni=resources.searchnationwidecareerchangehelperandguidancetoday.com&type=tcp&headerType=none#c25,passed,,tls,66.163.122.113,59,200,977.97107,471.65118,US,59,12,1,1,cloudflare.com=ok(59ms),0,0,0,0,0,IAD,off,
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c44,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,68,200,2.7715101,2.2839723,US,68,21,1,1,cloudflare.com=ok(68ms),0,0,0,0,0,EWR,off,
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#c55,passed,,,2605:6400:10:4a9:ba0d:30d6:58c8:8c71,44,200,3.2264156,2.6692214,US,44,8,1,1,cloudflare.com=ok(44ms),0,0,0,0,0,EWR,off,
+ss://YWVzLTI1Ni1nY206a0RXdlhZWm9UQmNHa0M0@15.204.246.108:8881#c42,passed,,,15.204.246.108,101,200,67.12346,73.794106,US,101,2,1,1,cloudflare.com=ok(101ms),0,0,0,0,0,IAD,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@167.88.62.203:19999#c61,passed,,,167.88.62.203,109,200,248.74554,150.9199,US,109,31,1,1,cloudflare.com=ok(109ms),0,0,0,0,0,DFW,off,
 каталога ~/.xray-knife нет
