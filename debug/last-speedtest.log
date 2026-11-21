@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 125
+Total configs: 122
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 09:49:39 Full test results for 125 configurations have also been saved to work/speed.csv
-🎉 09:49:39 Test run finished. Found 61 working configs (out of 125).
-ℹ️  09:49:39 64 not passed: 34 proxy-protocol, 20 http-timeout, 3 config, 3 tls-reset, 2 tls-timeout, 1 tcp-timeout, 1 timeout
-🎉 09:49:39 Results have been saved to work/speed.csv
+🎉 17:31:05 Full test results for 122 configurations have also been saved to work/speed.csv
+🎉 17:31:05 Test run finished. Found 56 working configs (out of 122).
+ℹ️  17:31:05 66 not passed: 31 proxy-protocol, 24 http-timeout, 4 config, 4 tls-reset, 2 tls-timeout, 1 timeout
+🎉 17:31:05 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-126 work/speed.csv
+123 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.106.186.82:443?security=tls&sni=courses.findlocaljobnetworkandbuildcommunityconnections.com&type=tcp&headerType=none#c45,passed,,tls,216.106.186.32,73,200,599.7666,224.40814,US,73,8,1,1,cloudflare.com=ok(73ms),0,0,0,0,0,SEA,off,
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c49,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,reality,2604:2dc0:200:26db::,73,200,0,437.5133,US,73,9,1,1,cloudflare.com=ok(73ms),0,0,0,0,0,SEA,off,
-vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.197:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c47,passed,,reality,2604:2dc0:200:26c5::,78,200,160.49089,30.884682,US,76,10,1,1,cloudflare.com=ok(78ms),0,0,0,0,0,SEA,off,
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.166:443?security=tls&sni=blog.findconnectwithemployersandbuildprofessionalnetwork.com&type=tcp&headerType=none#c55,passed,"speedtest_download_failed: Get ""https://speed.cloudflare.com/__down?bytes=10000000"": io: read/write on closed pipe",tls,66.163.114.245,140,200,0,67.40543,US,140,29,1,1,cloudflare.com=ok(140ms),0,0,0,0,0,DEN,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@149.40.57.138:19999#c68,passed,,,149.40.57.138,141,200,163.81766,162.43071,US,141,44,1,1,cloudflare.com=ok(141ms),0,0,0,0,0,ATL,off,
+vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=fuck.rkn&fp=chrome&security=reality&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01#c60,passed,,reality,2604:2dc0:200:26db::,142,200,14.975997,20.963694,US,141,29,1,1,cloudflare.com=ok(142ms),0,0,0,0,0,SEA,off,
 каталога ~/.xray-knife нет
