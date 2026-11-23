@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 162
+Total configs: 157
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 09:04:02 Full test results for 162 configurations have also been saved to work/speed.csv
-🎉 09:04:02 Test run finished. Found 95 working configs (out of 162).
-ℹ️  09:04:02 67 not passed: 38 proxy-protocol, 20 http-timeout, 3 tls-reset, 2 config, 2 tls-timeout, 1 proxy-auth, 1 tcp-timeout
-🎉 09:04:02 Results have been saved to work/speed.csv
+🎉 21:23:09 Full test results for 157 configurations have also been saved to work/speed.csv
+🎉 21:23:09 Test run finished. Found 97 working configs (out of 157).
+ℹ️  21:23:09 60 not passed: 43 proxy-protocol, 10 http-timeout, 3 tls-reset, 2 config, 2 tls-timeout
+🎉 21:23:09 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-163 work/speed.csv
+158 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@38.128.66.32:19999#c64,passed,,,38.128.66.32,52,200,290.76852,130.70476,US,52,10,1,1,cloudflare.com=ok(52ms),0,0,0,0,0,ORD,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c60,passed,,,156.146.38.170,57,200,500.13184,182.78447,US,57,15,1,1,cloudflare.com=ok(57ms),0,0,0,0,0,DFW,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#c61,passed,,,156.146.38.169,61,200,499.68607,437.47562,US,61,16,1,1,cloudflare.com=ok(61ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#c54,passed,,,156.146.38.170,41,200,708.6382,177.65164,US,41,12,1,1,cloudflare.com=ok(41ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#c32,passed,,,156.146.38.168,65,200,822.32074,213.49373,US,64,10,1,1,cloudflare.com=ok(65ms),0,0,0,0,0,DFW,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@137.184.89.151:19999#c71,passed,speedtest_download_failed: unexpected status 429 Too Many Requests,,137.184.89.151,122,200,0,106.52459,US,122,36,1,1,cloudflare.com=ok(122ms),0,0,0,0,0,SJC,off,
 каталога ~/.xray-knife нет
