@@ -56,7 +56,7 @@ Global Flags:
       --quiet       Only print warnings and errors (no progress bars or info logs); data on stdout is unaffected
 Use "xray-knife http [command] --help" for more information about a command.
 =========== попытка 1: вывод в CSV ===========
-Total configs: 171
+Total configs: 228
 Thread count: 50
 Maximum delay: 5000ms
 Speed test: true
@@ -64,16 +64,16 @@ IP info: true
 Insecure TLS: false
 Test url: https://cloudflare.com/cdn-cgi/trace
 Output file: work/speed.csv
-🎉 08:30:18 Full test results for 171 configurations have also been saved to work/speed.csv
-🎉 08:30:18 Test run finished. Found 96 working configs (out of 171).
-ℹ️  08:30:18 75 not passed: 49 proxy-protocol, 11 http-timeout, 9 tls-timeout, 4 tls-reset, 1 config, 1 tcp-refused
-🎉 08:30:18 Results have been saved to work/speed.csv
+🎉 18:58:55 Full test results for 228 configurations have also been saved to work/speed.csv
+🎉 18:58:55 Test run finished. Found 84 working configs (out of 228).
+ℹ️  18:58:55 144 not passed: 60 proxy-protocol, 36 http-timeout, 32 other, 7 config, 6 tls-timeout, 3 tls-reset
+🎉 18:58:55 Results have been saved to work/speed.csv
 =========== попытка 2: без флагов вывода ===========
 =========== что получилось ===========
-172 work/speed.csv
+229 work/speed.csv
 --- заголовок и три строки ---
 link,status,reason,tls,ip,delay,code,download,upload,location,ttfb,connect_time,success,total,endpoints,rtt_min,rtt_avg,rtt_max,jitter,rtt_samples,colo,warp,failure_kind
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.155.54:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.nextjobopportunityandclaimyouridealrole.com#c74,passed,,tls,216.152.155.59,51,200,187.07727,6.0799503,US,51,8,1,1,cloudflare.com=ok(51ms),0,0,0,0,0,ORD,off,
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#c78,passed,,,156.146.38.168,61,200,555.46844,237.41182,US,60,16,1,1,cloudflare.com=ok(61ms),0,0,0,0,0,DFW,off,
-ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@38.128.66.32:19999#c73,passed,,,38.128.66.32,86,200,318.4495,64.11685,US,86,25,1,1,cloudflare.com=ok(86ms),0,0,0,0,0,ORD,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@149.40.57.135:19999#c78,passed,,,149.40.57.135,51,200,308.8404,160.61987,US,51,14,1,1,cloudflare.com=ok(51ms),0,0,0,0,0,ATL,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@149.40.57.134:19999#c74,passed,,,149.40.57.134,54,200,370.37286,181.24059,US,54,15,1,1,cloudflare.com=ok(54ms),0,0,0,0,0,ATL,off,
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@185.230.230.18:19999#c22,passed,,,185.230.230.142,60,200,1451.0851,178.72038,US,60,6,1,1,cloudflare.com=ok(60ms),0,0,0,0,0,IAD,off,
 каталога ~/.xray-knife нет
